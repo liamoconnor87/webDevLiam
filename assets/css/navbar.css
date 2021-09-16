@@ -1,0 +1,92 @@
+.navbar{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, .5);
+  /* box-shadow: 0 1px 51px 22px rgba(0, 0, 0, 0.3); */
+}
+
+/* LOGO  */
+#webdevliam-logo{
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+.web{
+  color: rgb(248, 247, 2);
+}
+
+.dev{
+  color: rgb(35, 222, 241);
+}
+
+.liam{
+  color: rgb(87, 247, 2);
+}
+
+.notation{
+  color: rgb(255, 255, 255);
+}
+
+/* NAV MENU  */
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.nav-link{
+  margin: 0 auto;
+  padding: 3px 8px;
+}
+
+.nav-link a{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.nav-link a:hover{
+  text-decoration: underline;
+}
+
+#webdevliam-logo:hover{
+  text-decoration: underline;
+  color: rgb(240, 109, 255);
+}
+
+/* SMART DEVICES */
+@media screen and (min-width:  500px){
+
+  .navbar{
+    flex-direction: row;
+  }
+
+  #webdevliam-logo{
+    margin-left: 10px;
+  }
+
+  .nav-menu{
+    padding: 0;
+    margin: auto auto;
+    margin-right: 10px;
+  }
+
+}
+
+@media screen and (min-width:  700px){
+
+  .nav-link{
+    margin: 0 auto;
+    padding: 3px 10px;
+  }
+
+  .nav-link a{
+    font-size: 23px;
+  }
+
+}
