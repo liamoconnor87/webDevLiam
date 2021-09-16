@@ -1,0 +1,24 @@
+.map-container{
+	display: flex;
+	padding-top: 91px;
+	height: auto;
+}
+
+.map-container iframe{
+	width: 100%;
+	height: calc(100vh - 180px);
+}
+
+/* SMART DEVICES */
+@media screen and (min-width: 500px){
+
+	.map-container{
+		padding-top: 56px;
+	}
+
+	.map-container iframe{
+		width: 100%;
+		height: calc(100vh - 150px);
+	}
+
+}

@@ -5,25 +5,37 @@ footer{
 	color: rgb(255, 255, 255);
 }
 
-
 .contact-sect{
 	position: relative;
 	margin: 0 auto;
 }
 
-.contact-sect h2{
+.contact-sect h2, .chev i{
 	text-align: center;
 	font-weight: 600;
 }
 
-.contact-sect h1, .contact-sect h2, .contact-sect p{
+/* GET IN TOUCH - CHEVRON */
+h2 a{
+	color: rgb(255, 255, 255);
+}
+
+h2 a:hover{
+	color: rgb(255, 71, 71);
+}
+
+.contact-sect h1, .contact-sect h2,
+.contact-sect h4, .contact-sect p{
 	padding: 0 10px;
 }
 
-.footer-logo{
-	font-weight: 200 !important;
-	text-align: left !important;
-	margin-bottom: 3px !important;
+.contact-sect h1{
+	font-weight: 200;
+	text-align: left;
+	margin-bottom: 3px;
+}
+.contact-sect h4{
+	font-size: 200;
 }
 
 .contact-sect p{
@@ -67,9 +79,16 @@ footer{
 	color: rgb(87, 247, 2);
 }
 
+.bk-top{
+	font-size: 17px;
+	font-weight: 200;
+}
+
+/* SMART DEVICES  */
 @media screen and (min-width:  500px){
 
-	.contact-sect h1,  .contact-sect h2, .contact-sect p{
+	.contact-sect h1,  .contact-sect h2,
+	.contact-sect h4, .contact-sect p{
 		padding: 0 20px;
 	}
 }
