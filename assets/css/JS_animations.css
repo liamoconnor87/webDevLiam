@@ -1,3 +1,12 @@
-.flex{
-	display: flex;
+/* NAVBAR  */
+.navbar-bg{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-bg-solid{
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar-shad{
+	box-shadow: 0 1px 51px 22px rgba(0, 0, 0, 0.3);
 }

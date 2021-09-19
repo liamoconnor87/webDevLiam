@@ -15,6 +15,35 @@ a{
   text-decoration: none;
 }
 
+/* COLOUR PRESETS */
+.bg-yellow-50{
+  background-color: rgba(248, 247, 2, .5);
+}
+
+.bg-cyan-50{
+  background-color: rgba(35, 222, 241, .5);
+}
+
+.bg-green-50{
+  background-color: rgba(87, 247, 2, .5);
+}
+
+.bg-lilac-50{
+  background-color: rgba(240, 109, 255, .5);
+}
+
+.bg-white-50{
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.bg-black-50{
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.fnt-white{
+  color: rgb(255, 255, 255);
+}
+
 /* TEMP STYLES  */
 .temp{
   display: flex;
