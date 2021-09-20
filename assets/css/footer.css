@@ -79,6 +79,10 @@ h2 a:hover{
 	color: rgb(87, 247, 2);
 }
 
+.icon-3 a:hover{
+	color: rgb(248, 247, 2);
+}
+
 .bk-top{
 	font-size: 17px;
 	font-weight: 200;
