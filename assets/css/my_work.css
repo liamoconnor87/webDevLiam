@@ -21,6 +21,7 @@
 	position: relative;
 	display: flex;
 	width: 100%;
+	max-width: 400px;
 	height: auto;
 	margin: 0 auto;
 	padding: 40px;
@@ -83,7 +84,15 @@
 }
 
 /* SMART DEVICES */
-@media screen and (min-width: 450px){
+@media screen and (min-width: 500px){
+
+	.mywork-container{
+		padding-top: 56px;
+	}
+
+	.project-container{
+		max-width: 2000px;
+	}
 
 	.desktop-view{
 		display: inline;
@@ -91,14 +100,6 @@
 
 	.mobile-view{
 		display: none;
-	}
-
-}
-
-@media screen and (min-width: 500px){
-
-	.mywork-container{
-		padding-top: 56px;
 	}
 
 }
