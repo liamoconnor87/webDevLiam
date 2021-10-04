@@ -32,6 +32,9 @@
 
 	<!-- JQUERY CDN -->
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 	<title>webDevLiam | Web Designer - Web Developer - Builds Websites.</title>
 </head>
@@ -41,7 +44,7 @@
 	<nav class="navbar navbar-bg">
 
 		<a id="webdevliam-logo" href="index.html" aria-label="webDevLiam Index page">
-			<span class="notation"><</span><span class="notation">!--</span>
+			<span class="notation">&lt;</span><span class="notation">!--</span>
 			<span class="web">web</span><span class="dev">Dev</span><span class="liam">Liam</span>
 			<span class="notation">--</span><span class="notation">> </span>
 		</a>
@@ -53,7 +56,7 @@
 	</nav>
 
 	<!-- MAP SECTION -->
-	<div class="map-container">
+	<div data-aos="fade-in" data-aos-duration="1500" class="map-container">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9928.715161666652!2d0.588727699871891!3d51.52828047421612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8da91410ac231%3A0xd309648e383e3c18!2sWhernside%20Ave%2C%20Canvey%20Island%20SS8%208EG!5e0!3m2!1sen!2suk!4v1631872640017!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" aria-label="webDevLiam in Canvey Island, Essex, UK."></iframe>
 	</div>
 
@@ -62,9 +65,9 @@
 
 		<div class="contact-sect">
 			<br>
-			<h2>For all enquiries</h2>
+			<h2 onclick="skipTo()" class="pointer">For all enquiries</h2>
 			<h2>
-				<a class="chev" href="#get-in-touch" aria-label="Down to webDevLiam Contact Information">
+				<a onclick="skipTo()" class="chev pointer" aria-label="Down to webDevLiam Contact Information">
 					<i class="chev-icon fas fa-chevron-down"></i>
 				</a>
 			</h2>
@@ -73,7 +76,7 @@
 			<h1>
 				<span class="web">web</span><span class="dev">Dev</span><span class="liam">Liam</span>'s
 			</h1>
-			<p aria-label="webDevLiam Address">
+			<p>
     			Whernside Aveune
     			<br>
     			Canvey Island
@@ -104,6 +107,19 @@
 
 	<!-- JS SCRIPTS -->
  	<script src="assets/scripts/mouse_hover.js"></script>
+
+ 	<!-- AOS SCRIPTS -->
+ 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 	<script>AOS.init();</script>
+
+ 	<!-- SCROLL ANIMATION -->
+ 	<script>
+        function skipTo() {
+            $('html, body').animate({
+                scrollTop: $("#get-in-touch").offset().top
+            }, 800);
+        }
+    </script>
 
 </body>
 </html>

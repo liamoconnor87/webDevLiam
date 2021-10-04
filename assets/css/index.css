@@ -14,6 +14,10 @@ a{
   text-decoration: none;
 }
 
+.pointer{
+  cursor: pointer;
+}
+
 .landing-page{
   display: flex;
   flex-direction: column;
@@ -45,7 +49,7 @@ a{
   transition: .8s;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .wel-container:hover{
@@ -229,6 +233,7 @@ a{
   .info-container{
     flex-direction: row-reverse;
   }
+
 
   .row-alternative{
     flex-direction: row !important;

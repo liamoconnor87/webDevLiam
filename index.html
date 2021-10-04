@@ -31,6 +31,9 @@
 
 	<!-- JQUERY CDN -->
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 	<title>webDevLiam | Web Designer - Web Developer - Builds Websites.</title>
 </head>
@@ -40,7 +43,7 @@
 	<nav class="navbar navbar-bg">
 
 		<a id="webdevliam-logo" href="index.html" aria-label="webDevLiam Index page">
-			<span class="notation"><</span><span class="notation">!--</span>
+			<span class="notation">&lt;</span><span class="notation">!--</span>
 			<span class="web">web</span><span class="dev">Dev</span><span class="liam">Liam</span>
 			<span class="notation">--</span><span class="notation">> </span>
 		</a>
@@ -55,9 +58,9 @@
 	<div id="back-to-top" class="landing-page bg-red">
 
 		<!-- NEED A WEBSITE -->
-		<div class="welcome">
+		<div data-aos="fade-in" data-aos-duration="1500" class="welcome">
 
-			<a href="#skip-to-info" class="wel-container">
+			<a onclick="skipTo()" class="wel-container pointer">
 				<p class="need-web">
 					need a website?
 					<br>
@@ -70,13 +73,13 @@
 	</div>
 
 	<!-- WEB DESIGN -->
-	<div id="skip-to-info" class="information-sect bg-cyan">
+	<div id="skip-to-info" class="information-sect bg-cyan" >
 
-		<h1 aria-label="Web Design"><em>webDesign</em></h1>
+		<h1 aria-label="Web Design" data-aos="fade-in" data-aos-duration="1000"><em>webDesign</em></h1>
 
 		<div class="info-container">
 
-			<div class="info-column">
+			<div class="info-column" data-aos="fade-left" data-aos-duration="1000">
 
 				<h2>UX Driven Design</h2>
 				<p>
@@ -85,7 +88,7 @@
 
 			</div>
 
-			<img class="info-mobile-view" src="assets/img/sewright-smrt.PNG" alt="Mobile view of Sewright Industrial Sewing Machines" aria-label="Mobile view of Sewright Industrial Sewing Machines" aria-hidden="true">
+			<img class="info-mobile-view" src="assets/img/sewright-smrt.PNG" alt="Mobile view of Sewright Industrial Sewing Machines" aria-label="Mobile view of Sewright Industrial Sewing Machines" aria-hidden="true" data-aos="fade-right" data-aos-duration="1000">
 
 		</div>
 
@@ -94,11 +97,11 @@
 	<!-- BRANDING -->
 	<div class="information-sect bg-lilac">
 
-		<h1 aria-label="Branding"><em>Branding</em></h1>
+		<h1 aria-label="Branding" data-aos="fade-in" data-aos-duration="1000"><em>Branding</em></h1>
 
-		<div class="info-container row-alternative">
+		<div class="info-container row-alternative" >
 
-			<div class="info-column">
+			<div class="info-column" data-aos="fade-right" data-aos-duration="1000">
 
 				<h2>Need a business identity?</h2>
 				<p>
@@ -107,7 +110,7 @@
 
 			</div>
 
-			<img class="branding-logo brand-logo-smrt" src="assets/img/logos-smrt.png" alt="Logo's designed by webDevLiam" aria-label="Logo's designed by webDevLiam" aria-hidden="true">
+			<img class="branding-logo brand-logo-smrt" src="assets/img/logos-smrt.png" alt="Logo's designed by webDevLiam" aria-label="Logo's designed by webDevLiam" aria-hidden="true" data-aos="fade-left" data-aos-duration="1000">
 
 		</div>
 
@@ -116,9 +119,9 @@
 	<!-- WEB HOSTING -->
 	<div class="information-sect bg-yel">
 
-		<h1 aria-label="Website Hosting"><em>webHosting</em></h1>
+		<h1 aria-label="Website Hosting" data-aos="fade-in" data-aos-duration="1000"><em>webHosting</em></h1>
 
-		<div class="info-container col-alternative">
+		<div class="info-container col-alternative" data-aos="fade-up" data-aos-duration="1000">
 
 			<h1 class="network-icon"><i class="fas fa-network-wired"></i></h1>
 
@@ -144,11 +147,11 @@
 		<div class="contact-sect">
 			<br>
 			<h2 class="bk-top">
-				<a class="chev" href="#back-to-top" aria-label="Back to the top of the page">
+				<a onclick="toTop()" class="chev pointer" aria-label="Back to the top of the page">
 					<i class="chev-icon fas fa-chevron-up"></i>
 				</a>
 			</h2>
-			<h2 class="bk-top">Back to top</h2>
+			<h2 onclick="toTop()" class="bk-top pointer">Back to top</h2>
 			<br>
 			<br>
 			<h1>
@@ -181,7 +184,24 @@
 
 	<!-- JS SCRIPTS -->
  	<script src="assets/scripts/mouse_hover.js"></script>
- 	<script src="assets/scripts/fade-in-welcome.js"></script>
+
+ 	<!-- AOS SCRIPTS -->
+ 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 	<script>AOS.init();</script>
+
+ 	<!-- SCROLL ANIMATION -->
+ 	<script>
+        function skipTo() {
+            $('html, body').animate({
+                scrollTop: $("#skip-to-info").offset().top
+            }, 800);
+        }
+        function toTop() {
+            $('html, body').animate({
+                scrollTop: $("#back-to-top").offset().top
+            }, 800);
+        }
+    </script>
 
 </body>
 </html>
