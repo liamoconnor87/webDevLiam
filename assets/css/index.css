@@ -10,6 +10,7 @@ body{
   color: rgb(0, 0, 0);
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 
 a{
@@ -35,6 +36,7 @@ a{
   max-width: 1500px;
   margin: 0 auto;
   display: flex;
+  overflow-x: hidden;
 }
 
 .wel-container{
@@ -51,7 +53,6 @@ a{
   transition: .8s;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  /* opacity: 0; */
 }
 
 .wel-container:hover{
@@ -92,6 +93,7 @@ a{
   transform: scale(1);
   transform-style: preserve-3d;
   transition: .8s;
+  overflow-x: hidden;
 }
 
 .information-sect h1:hover{
@@ -143,6 +145,7 @@ a{
 .network-icon i{
   font-size: 150px;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  padding-bottom: 20px;
 }
 
 .info-mobile-view{
@@ -153,6 +156,7 @@ a{
   border: solid 8px rgb(0, 0, 0);
   border-bottom: solid 20px rgb(0, 0, 0);
   border-radius: 7px;
+  overflow-x: hidden;
 }
 
 .branding-logo{
