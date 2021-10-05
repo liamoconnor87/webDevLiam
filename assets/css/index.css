@@ -8,6 +8,8 @@
 body{
   font-family: 'Zilla Slab', serif;
   color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
 }
 
 a{
@@ -135,6 +137,7 @@ a{
   display: flex;
   flex-direction: column;
   margin: auto auto;
+  overflow-x: hidden;
 }
 
 .network-icon i{
@@ -157,6 +160,7 @@ a{
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
   width: 80%;
   max-width: 250px;
+  overflow-x: hidden;
 }
 
 .col-alternative{
