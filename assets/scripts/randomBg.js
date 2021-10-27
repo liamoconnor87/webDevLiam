@@ -29,7 +29,7 @@ let bgColoursArray  = ["cyan", "lilac", "yellow", "green"];
 bgColoursArray = shufflesBgColours(bgColoursArray);
 
 // This will display new order of Array.
-console.log(bgColoursArray);
+// console.log(bgColoursArray);
 let randBgOneArray =  bgColoursArray[0];
 let randBgTwoArray = bgColoursArray[1];
 let randBgThreeArray = bgColoursArray[2];
@@ -43,7 +43,7 @@ let randBgThree = randBgThreeArray.toString();
 // Functions that determine which array sets which colour of background.
 function backgroundOne() {
 
-	console.log("backgroundOne Triggered");
+	// console.log("backgroundOne Triggered");
 
 	if (randBgOne == "cyan") {
 		$(".bg-one").addClass("bg-cyan");
@@ -65,7 +65,7 @@ function backgroundOne() {
 
 function backgroundTwo() {
 
-	console.log("backgroundTwo Triggered");
+	// console.log("backgroundTwo Triggered");
 
 	if (randBgTwo == "cyan") {
 		$(".bg-two").addClass("bg-cyan");
@@ -87,7 +87,7 @@ function backgroundTwo() {
 
 function backgroundThree() {
 
-	console.log("backgroundThree Triggered");
+	// console.log("backgroundThree Triggered");
 
 	if (randBgThree == "cyan") {
 		$(".bg-three").addClass("bg-cyan");

@@ -66,9 +66,9 @@
 
 		<div class="contact-sect">
 			<br>
-			<h2 onclick="skipTo()" class="pointer">For all enquiries</h2>
+			<h2 onclick="skipToFooter()" class="pointer">For all enquiries</h2>
 			<h2>
-				<a onclick="skipTo()" class="chev pointer" aria-label="Down to webDevLiam Contact Information">
+				<a onclick="skipToFooter()" class="chev pointer" aria-label="Down to webDevLiam Contact Information">
 					<i class="chev-icon fas fa-chevron-down"></i>
 				</a>
 			</h2>
@@ -109,19 +109,11 @@
 	<!-- JS SCRIPTS -->
  	<script src="assets/scripts/mouse_hover.js"></script>
  	<script type="text/javascript" src="assets/scripts/randomBg.js"></script>
+ 	<script type="text/javascript" src="assets/scripts/scroll_to.js"></script>
 
  	<!-- AOS SCRIPTS -->
  	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  	<script>AOS.init();</script>
-
- 	<!-- SCROLL ANIMATION -->
- 	<script>
-        function skipTo() {
-            $('html, body').animate({
-                scrollTop: $("#get-in-touch").offset().top
-            }, 800);
-        }
-    </script>
 
 </body>
 </html>

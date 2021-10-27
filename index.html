@@ -49,7 +49,7 @@
 	<!-- NAVIGATION BAR -->
 	<nav class="navbar navbar-bg">
 
-		<a id="webdevliam-logo" href="index.html" aria-label="webDevLiam Index page">
+		<a id="webdevliam-logo" onclick="toTop()" aria-label="webDevLiam Index page" class="pointer">
 			<span class="notation">&lt;</span><span class="notation">!--</span>
 			<span class="web">web</span><span class="dev">Dev</span><span class="liam">Liam</span>
 			<span class="notation">--</span><span class="notation">> </span>
@@ -67,7 +67,7 @@
 		<!-- NEED A WEBSITE -->
 		<div data-aos="fade-in" data-aos-duration="1500" class="welcome">
 
-			<a onclick="skipTo()" class="wel-container pointer">
+			<a onclick="skipToWebDesign()" class="wel-container pointer">
 				<p class="need-web">
 					need a website?
 					<br>
@@ -80,7 +80,7 @@
 	</div>
 
 	<!-- WEB DESIGN -->
-	<div id="skip-to-info" class="information-sect bg-one">
+	<div id="skip-to-info" class="information-sect bg-one web-design-sect">
 
 		<h1 aria-label="Web Design" data-aos="fade-in" data-aos-duration="1000"><em>webDesign</em></h1>
 
@@ -106,7 +106,7 @@
 	</div>
 
 	<!-- BRANDING -->
-	<div class="information-sect bg-two">
+	<div class="information-sect bg-two branding-sect">
 
 		<h1 aria-label="Branding" data-aos="fade-in" data-aos-duration="1000"><em>Branding</em></h1>
 
@@ -134,7 +134,7 @@
 	</div>
 
 	<!-- WEB HOSTING -->
-	<div class="information-sect bg-three">
+	<div class="information-sect bg-three web-host-sect">
 
 		<h1 aria-label="Website Hosting" data-aos="fade-in" data-aos-duration="1000"><em>webHosting</em></h1>
 
@@ -160,7 +160,7 @@
 
 
 	<!-- FOOTER -->
-	<footer>
+	<footer class="footer-sect">
 
 		<div class="contact-sect">
 			<br>
@@ -208,24 +208,11 @@
 	<!-- JS SCRIPTS -->
 	<script type="text/javascript" src="assets/scripts/mouse_hover.js"></script>
 	<script type="text/javascript" src="assets/scripts/randomBg.js"></script>
+	<script type="text/javascript" src="assets/scripts/scroll_to.js"></script>
 
 	<!-- AOS SCRIPTS -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
-
-	<!-- SCROLL ANIMATION -->
-	<script>
-		function skipTo() {
-			$('html, body').animate({
-				scrollTop: $("#skip-to-info").offset().top
-			}, 800);
-		}
-		function toTop() {
-			$('html, body').animate({
-				scrollTop: $("#back-to-top").offset().top
-			}, 800);
-		}
-	</script>
 
 </body>
 
