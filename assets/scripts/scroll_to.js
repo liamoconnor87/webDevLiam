@@ -1,4 +1,4 @@
-function skipToWebDesign() {
+function skipTo() {
 	$('html, body').animate({
 		scrollTop: $("#skip-to-info").offset().top
 	}, 800);

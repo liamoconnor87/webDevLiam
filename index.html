@@ -35,8 +35,7 @@
 	<script src="https://kit.fontawesome.com/fd5b45d410.js" crossorigin="anonymous"></script>
 
 	<!-- JQUERY CDN -->
-	<script src="https://code.jquery.com/jquery-3.5.1.js"
-		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 	<!-- AOS -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -67,7 +66,7 @@
 		<!-- NEED A WEBSITE -->
 		<div data-aos="fade-in" data-aos-duration="1500" class="welcome">
 
-			<a onclick="skipToWebDesign()" class="wel-container pointer">
+			<a onclick="skipTo()" class="wel-container pointer">
 				<p class="need-web">
 					need a website?
 					<br>
@@ -79,14 +78,37 @@
 
 	</div>
 
+	<!-- Build a Website-->
+	<div id="skip-to-info" class="information-sect bg-one web-host-sect">
+
+		<h1 aria-label="Website Hosting" data-aos="fade-in" data-aos-duration="1000"><em>websiteBuilding</em></h1>
+
+		<div class="info-container col-alternative" data-aos="fade-up" data-aos-duration="1000">
+
+			<h1 class="network-icon" data-aos="fade-in" data-aos-duration="1000"><i class="fas fa-desktop"></i></h1>
+
+			<div class="info-column">
+
+				<h2>Starting from £100 per page!</h2>
+
+				<p>Give your Business an online presence.</p>
+
+			</div>
+
+		</div>
+
+		<br>
+
+	</div>
+
 	<!-- WEB DESIGN -->
-	<div id="skip-to-info" class="information-sect bg-one web-design-sect">
+	<div class="information-sect bg-two web-design-sect">
 
 		<h1 aria-label="Web Design" data-aos="fade-in" data-aos-duration="1000"><em>webDesign</em></h1>
 
 		<div class="info-container">
 
-			<div class="info-column" data-aos="fade-left" data-aos-duration="1000">
+			<div class="info-column fade-left" data-aos-duration="1000">
 
 				<h2>UX Driven Design</h2>
 				<p>
@@ -96,23 +118,26 @@
 
 			</div>
 
-			<img class="info-mobile-view" src="assets/img/sewright-smrt.PNG"
+			<img class="info-mobile-view fade-right" src="assets/img/sewright-smrt.PNG"
 				alt="Mobile view of Sewright Industrial Sewing Machines"
-				aria-label="Mobile view of Sewright Industrial Sewing Machines" aria-hidden="true" data-aos="fade-right"
+				aria-label="Mobile view of Sewright Industrial Sewing Machines" aria-hidden="true"
 				data-aos-duration="1000">
 
 		</div>
 
+		<br>
+		<br>
+
 	</div>
 
 	<!-- BRANDING -->
-	<div class="information-sect bg-two branding-sect">
+	<div class="information-sect bg-three branding-sect">
 
 		<h1 aria-label="Branding" data-aos="fade-in" data-aos-duration="1000"><em>Branding</em></h1>
 
 		<div class="info-container row-alternative">
 
-			<div class="info-column" data-aos="fade-right" data-aos-duration="1000">
+			<div class="info-column fade-right" data-aos-duration="1000">
 
 				<h2>Need a business identity?</h2>
 				<p>
@@ -125,16 +150,15 @@
 
 			</div>
 
-			<img class="branding-logo brand-logo-smrt" src="assets/img/logos-smrt.png"
-				alt="Logo's designed by webDevLiam" aria-label="Logo's designed by webDevLiam" aria-hidden="true"
-				data-aos="fade-left" data-aos-duration="1000">
+			<img class="branding-logo brand-logo-smrt fade-left" src="assets/img/logos-smrt.png"
+				alt="Logo's designed by webDevLiam" aria-label="Logo's designed by webDevLiam" aria-hidden="true"data-aos-duration="1000">
 
 		</div>
 
 	</div>
 
 	<!-- WEB HOSTING -->
-	<div class="information-sect bg-three web-host-sect">
+	<div class="information-sect bg-four web-host-sect">
 
 		<h1 aria-label="Website Hosting" data-aos="fade-in" data-aos-duration="1000"><em>webHosting</em></h1>
 
@@ -209,6 +233,7 @@
 	<script type="text/javascript" src="assets/scripts/mouse_hover.js"></script>
 	<script type="text/javascript" src="assets/scripts/randomBg.js"></script>
 	<script type="text/javascript" src="assets/scripts/scroll_to.js"></script>
+	<script type="text/javascript" src="assets/scripts/screen_size_detect.js"></script>
 
 	<!-- AOS SCRIPTS -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

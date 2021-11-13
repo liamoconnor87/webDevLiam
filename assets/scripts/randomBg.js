@@ -33,11 +33,13 @@ bgColoursArray = shufflesBgColours(bgColoursArray);
 let randBgOneArray =  bgColoursArray[0];
 let randBgTwoArray = bgColoursArray[1];
 let randBgThreeArray = bgColoursArray[2];
+let randBgFourArray = bgColoursArray[3];
 
 // Converts each new Arrays into Sting.
 let randBgOne = randBgOneArray.toString();
 let randBgTwo = randBgTwoArray.toString();
 let randBgThree = randBgThreeArray.toString();
+let randBgFour = randBgFourArray.toString();
 
 
 // Functions that determine which array sets which colour of background.
@@ -107,6 +109,28 @@ function backgroundThree() {
 
 }
 
+function backgroundFour() {
+
+	// console.log("backgroundThree Triggered");
+
+	if (randBgFour == "cyan") {
+		$(".bg-four").addClass("bg-cyan");
+		// console.log("Cyan BG Success");
+	} else if (randBgFour == "yellow") {
+		$(".bg-four").addClass("bg-yel");
+		// console.log("Yellow BG Success");
+	} else if (randBgFour == "lilac") {
+		$(".bg-four").addClass("bg-lilac");
+		// console.log("Lilac BG Success");
+	} else if (randBgFour == "green") {
+		$(".bg-four").addClass("bg-green");
+		// console.log("Green BG Success");
+	} else {
+		console.log("Error with BG Three");
+	}
+
+}
+
 (function bgGenerator(){
 
 	// console.log("bgGenerator Triggered");
@@ -116,6 +140,8 @@ function backgroundThree() {
 	backgroundTwo();
 
 	backgroundThree();
+
+	backgroundFour();
 
 	// console.log("bgGenerator Completed");
 	
