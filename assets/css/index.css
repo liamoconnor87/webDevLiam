@@ -67,7 +67,7 @@ a{
 .intro{
   text-align: center;
   margin: auto auto;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   padding: 5px 10px;
 }
@@ -175,7 +175,7 @@ a{
 @media screen and (min-width: 319px){
 
   .intro{
-    font-size: 42px;
+    font-size: 32px;
   }
 
 }
@@ -183,7 +183,7 @@ a{
 @media screen and (min-width:  359px){
 
   .intro{
-    font-size: 45px;
+    font-size: 35px;
   }
 
 }
@@ -191,7 +191,7 @@ a{
 @media screen and (min-width: 374px){
 
   .intro{
-    font-size: 50px;
+    font-size: 38px;
   }
 
 }
@@ -199,7 +199,7 @@ a{
 @media screen and (min-width: 410px){
 
   .intro{
-    font-size: 53px;
+    font-size: 43px;
   }
 
 }
@@ -215,7 +215,7 @@ a{
   }
 
   .intro{
-    font-size: 58px;
+    font-size: 48px;
   }
 
   .information-sect{
