@@ -120,4 +120,8 @@ h2 a:hover{
 	.contact-sect h3, .contact-sect p{
 		padding: 0 20px;
 	}
+
+	.nav-icon-1 a, .nav-icon-2 a{
+		font-size: 50px;
+	  }
 }
