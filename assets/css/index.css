@@ -64,12 +64,12 @@ a{
   transition: .2s;
 }
 
-.need-web{
+.intro{
   text-align: center;
   margin: auto auto;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .scroll-chev{
@@ -174,32 +174,32 @@ a{
 /* SMART DEVICES  */
 @media screen and (min-width: 319px){
 
-  .need-web{
-    font-size: 68px;
+  .intro{
+    font-size: 42px;
   }
 
 }
 
 @media screen and (min-width:  359px){
 
-  .need-web{
-    font-size: 75px;
+  .intro{
+    font-size: 45px;
   }
 
 }
 
 @media screen and (min-width: 374px){
 
-  .need-web{
-    font-size: 80px;
+  .intro{
+    font-size: 50px;
   }
 
 }
 
 @media screen and (min-width: 410px){
 
-  .need-web{
-    font-size: 89px;
+  .intro{
+    font-size: 53px;
   }
 
 }
@@ -214,8 +214,8 @@ a{
     height: calc(100vh - 56px);
   }
 
-  .need-web{
-    font-size: 110px;
+  .intro{
+    font-size: 58px;
   }
 
   .information-sect{
@@ -230,8 +230,8 @@ a{
 
 @media screen and (min-width: 600px){
 
-  .need-web{
-    font-size: 110px;
+  .intro{
+    font-size: 60px;
   }
 
 }

@@ -45,20 +45,14 @@ let randBgFour = randBgFourArray.toString();
 // Functions that determine which array sets which colour of background.
 function backgroundOne() {
 
-	// console.log("backgroundOne Triggered");
-
 	if (randBgOne == "cyan") {
 		$(".bg-one").addClass("bg-cyan");
-		// console.log("Cyan BG Success");
 	} else if (randBgOne == "yellow") {
 		$(".bg-one").addClass("bg-yel");
-		// console.log("Yellow BG Success");
 	} else if (randBgOne == "lilac") {
 		$(".bg-one").addClass("bg-lilac");
-		// console.log("Lilac BG Success");
 	} else if (randBgOne == "green") {
 		$(".bg-one").addClass("bg-green");
-		// console.log("Green BG Success");
 	} else {
 		console.log("Error with BG One");
 	}
@@ -67,20 +61,18 @@ function backgroundOne() {
 
 function backgroundTwo() {
 
-	// console.log("backgroundTwo Triggered");
-
 	if (randBgTwo == "cyan") {
 		$(".bg-two").addClass("bg-cyan");
-		// console.log("Cyan BG Success");
+		$(".nav-icon-2").addClass("icon")
 	} else if (randBgTwo == "yellow") {
 		$(".bg-two").addClass("bg-yel");
-		// console.log("Yellow BG Success");
+		$(".nav-icon-2").addClass("icon-3")
 	} else if (randBgTwo == "lilac") {
 		$(".bg-two").addClass("bg-lilac");
-		// console.log("Lilac BG Success");
+		$(".nav-icon-2").addClass("icon-4")
 	} else if (randBgTwo == "green") {
 		$(".bg-two").addClass("bg-green");
-		// console.log("Green BG Success");
+		$(".nav-icon-2").addClass("icon-2")
 	} else {
 		console.log("Error with BG Two");
 	}
@@ -89,20 +81,18 @@ function backgroundTwo() {
 
 function backgroundThree() {
 
-	// console.log("backgroundThree Triggered");
-
 	if (randBgThree == "cyan") {
 		$(".bg-three").addClass("bg-cyan");
-		// console.log("Cyan BG Success");
+		$(".nav-icon-1").addClass("icon")
 	} else if (randBgThree == "yellow") {
 		$(".bg-three").addClass("bg-yel");
-		// console.log("Yellow BG Success");
+		$(".nav-icon-1").addClass("icon-3")
 	} else if (randBgThree == "lilac") {
 		$(".bg-three").addClass("bg-lilac");
-		// console.log("Lilac BG Success");
+		$(".nav-icon-1").addClass("icon-4")
 	} else if (randBgThree == "green") {
 		$(".bg-three").addClass("bg-green");
-		// console.log("Green BG Success");
+		$(".nav-icon-1").addClass("icon-2")
 	} else {
 		console.log("Error with BG Three");
 	}
@@ -111,20 +101,14 @@ function backgroundThree() {
 
 function backgroundFour() {
 
-	// console.log("backgroundThree Triggered");
-
 	if (randBgFour == "cyan") {
 		$(".bg-four").addClass("bg-cyan");
-		// console.log("Cyan BG Success");
 	} else if (randBgFour == "yellow") {
 		$(".bg-four").addClass("bg-yel");
-		// console.log("Yellow BG Success");
 	} else if (randBgFour == "lilac") {
 		$(".bg-four").addClass("bg-lilac");
-		// console.log("Lilac BG Success");
 	} else if (randBgFour == "green") {
 		$(".bg-four").addClass("bg-green");
-		// console.log("Green BG Success");
 	} else {
 		console.log("Error with BG Three");
 	}
@@ -132,8 +116,6 @@ function backgroundFour() {
 }
 
 (function bgGenerator(){
-
-	// console.log("bgGenerator Triggered");
 
 	backgroundOne();
 
@@ -143,6 +125,4 @@ function backgroundFour() {
 
 	backgroundFour();
 
-	// console.log("bgGenerator Completed");
-	
 })();
