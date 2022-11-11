@@ -4,9 +4,6 @@
 
 // Shuffles the Array bgColoursArray and returns its shuffled order.
 function shufflesBgColours(newBgOrder) {
-
-	// console.log("shufflesBgColours Triggered");
-
 	// Ref - https://www.w3docs.com/snippets/javascript/how-to-randomize-shuffle-a-javascript-array.html
 	let curId = newBgOrder.length;
 	while (0 !== curId) {
@@ -17,9 +14,6 @@ function shufflesBgColours(newBgOrder) {
 		newBgOrder[curId] = newBgOrder[randId];
 		newBgOrder[randId] = tmp;
 	}
-
-	// console.log("shufflesBgColours completed");
-
 	// Returns new Array of bgColoursArray
 	return newBgOrder;
 }
@@ -29,7 +23,6 @@ let bgColoursArray  = ["cyan", "lilac", "yellow", "green"];
 bgColoursArray = shufflesBgColours(bgColoursArray);
 
 // This will display new order of Array.
-// console.log(bgColoursArray);
 let randBgOneArray =  bgColoursArray[0];
 let randBgTwoArray = bgColoursArray[1];
 let randBgThreeArray = bgColoursArray[2];
@@ -44,7 +37,6 @@ let randBgFour = randBgFourArray.toString();
 
 // Functions that determine which array sets which colour of background.
 function backgroundOne() {
-
 	if (randBgOne == "cyan") {
 		$(".bg-one").addClass("bg-cyan");
 	} else if (randBgOne == "yellow") {
@@ -60,7 +52,6 @@ function backgroundOne() {
 }
 
 function backgroundTwo() {
-
 	if (randBgTwo == "cyan") {
 		$(".bg-two").addClass("bg-cyan");
 		$(".nav-icon-2").addClass("icon")
@@ -80,7 +71,6 @@ function backgroundTwo() {
 }
 
 function backgroundThree() {
-
 	if (randBgThree == "cyan") {
 		$(".bg-three").addClass("bg-cyan");
 		$(".nav-icon-1").addClass("icon")
@@ -110,19 +100,14 @@ function backgroundFour() {
 	} else if (randBgFour == "green") {
 		$(".bg-four").addClass("bg-green");
 	} else {
-		console.log("Error with BG Three");
+		console.log("Error with BG Four");
 	}
 
 }
 
 (function bgGenerator(){
-
 	backgroundOne();
-
 	backgroundTwo();
-
 	backgroundThree();
-
 	backgroundFour();
-
 })();
