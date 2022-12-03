@@ -19,7 +19,7 @@ function shufflesBgColours(newBgOrder) {
 }
 
 // Original order of array.
-let bgColoursArray  = ["cyan", "lilac", "yellow", "green"];
+let bgColoursArray  = ["cyan", "lilac", "yellow", "green", "red"];
 bgColoursArray = shufflesBgColours(bgColoursArray);
 
 // This will display new order of Array.
@@ -45,6 +45,8 @@ function backgroundOne() {
 		$(".bg-one").addClass("bg-lilac");
 	} else if (randBgOne == "green") {
 		$(".bg-one").addClass("bg-green");
+	} else if (randBgOne == "red") {
+		$(".bg-one").addClass("bg-red");
 	} else {
 		console.log("Error with BG One");
 	}
@@ -63,6 +65,9 @@ function backgroundTwo() {
 		$(".nav-icon-2").addClass("icon-4")
 	} else if (randBgTwo == "green") {
 		$(".bg-two").addClass("bg-green");
+		$(".nav-icon-2").addClass("icon-2")
+	}else if (randBgTwo == "red") {
+		$(".bg-two").addClass("bg-red");
 		$(".nav-icon-2").addClass("icon-2")
 	} else {
 		console.log("Error with BG Two");
@@ -83,6 +88,9 @@ function backgroundThree() {
 	} else if (randBgThree == "green") {
 		$(".bg-three").addClass("bg-green");
 		$(".nav-icon-1").addClass("icon-2")
+	}  else if (randBgThree == "red") {
+		$(".bg-three").addClass("bg-red");
+		$(".nav-icon-1").addClass("icon-2")
 	} else {
 		console.log("Error with BG Three");
 	}
@@ -99,6 +107,8 @@ function backgroundFour() {
 		$(".bg-four").addClass("bg-lilac");
 	} else if (randBgFour == "green") {
 		$(".bg-four").addClass("bg-green");
+	} else if (randBgFour == "red") {
+		$(".bg-four").addClass("bg-red");
 	} else {
 		console.log("Error with BG Four");
 	}
