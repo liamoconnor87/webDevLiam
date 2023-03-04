@@ -29,19 +29,21 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-	<!-- FONT AWESOME -->
-	<script src="https://kit.fontawesome.com/fd5b45d410.js" crossorigin="anonymous"></script>
-
 	<!-- JQUERY CDN -->
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 	<!-- AOS -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-	<title>webDevLiam | Liam O'Connor | Web Designer | Web Developer - Based in Canvey Island, Essex.</title>
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/fd5b45d410.js" crossorigin="anonymous"></script>
+
+	<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+	<title>webDevLiam | Liam O'Connor | Python Developer | Web Developer - Based in Canvey Island, Essex.</title>
 </head>
 
-<body>
+<body onload="shuffleColours()">
 
 	<!-- NAVIGATION BAR -->
 	<nav class="navbar navbar-bg-solid">
@@ -61,154 +63,82 @@
 					<i class="fab fa-github"></i>
 				</a>
 			</div>
+			<div class="nav-link nav-icon-3 pointer">
+				<a class="refresh-btn" onclick="reshuffleBgColours()" target="_blank" rel="noopener noreferrer" aria-label="Shuffle">
+					<i class="fi-xwsuxx-reload"></i>
+				</a>
+			</div>
 		</div>
 	</nav>
 
-	<!-- LANDING PAGE -->
-	<div id="back-to-top" class="landing-page bg-four">
-
-		<div data-aos="fade-in" data-aos-duration="1500" class="welcome">
-
-			<a onclick="skipTo()" class="wel-container pointer">
-				<p class="intro">
-					Web developer, mostly with Python. Currently a Junior Python Developer @ TeamWeb.
-					<br>
-					<br>
-					<i class="fas fa-chevron-down"></i>
-				</p>
-			</a>
-
-		</div>
-
-	</div>
-
 	<!-- MY WORK -->
-	<div id="skip-to-info" class="information-sect bg-one web-host-sect">
-
+	<div id="back-to-top" class="landing-page">
 		<div class="project-row">
-
-			<div class="project-container" data-aos="fade-top" data-aos-duration="1000">
-
-				<a href="https://liamoconnor87.github.io/MyallSigns/" target="_blank" rel="noopener noreferrer" aria-label="Myall Signs Website">
-					<img class="mobile-view" src="assets/img/myallsigns-smrt.PNG" alt="Myall Signs Mobile View">
-					<img class="desktop-view" src="assets/img/myallsigns-desk.PNG" alt="Myall Signs Desktop View">
-					<div class="preview-overlay bg-black-50">
-						<h2 class="fnt-white">MYALL SIGNS</h2>
-					</div>
-				</a>
-
+			<div class="project-container bg-one">
+				<!-- Blackbolt -->
+				<div class="preview-overlay">
+					<a href="https://github.com/liamoconnor87/blackboltcomics" target="_blank" rel="noopener noreferrer">
+						<h2 class="fnt-black">BLACKBOLT COMICS WEBSITE</h2>
+						<p>HTML | CSS | JavaScript | Python | jQuery | Django | PostgreSQL | AWS </p>
+						<img class="mobile-view" src="assets/img/blackbolt-smrt.PNG" alt="Blackbolt Comics Mobile View">
+					</a>
+				</div>
 			</div>
-
-			<div class="project-container" data-aos="fade-top" data-aos-duration="1000">
-
-				<a href="https://liamoconnor87.github.io/bobsburgersgame/" target="_blank" rel="noopener noreferrer" aria-label="The Bob's Burgers Memory Game">
-					<img class="mobile-view" src="assets/img/bobs-smrt.PNG" alt="The Bob's Burgers Memory Game Mobile View">
-					<img class="desktop-view" src="assets/img/bobs-desk.PNG" alt="The Bob's Burgers Memory Game Desktop View">
-					<div class="preview-overlay bg-black-50">
-						<h2 class="fnt-white">BOB'S BURGERS MEMORY GAME</h2>
-					</div>
-				</a>
-
+			<div class="project-container bg-two">
+				<!-- Local Directory -->
+				<div class="preview-overlay">
+					<a href="https://github.com/liamoconnor87/local_directory" target="_blank" rel="noopener noreferrer">
+						<h2 class="fnt-black">LOCAL DIRECTORY APP</h2>
+						<p>HTML | CSS | JavaScript | Python | Flask | jQuery | MongoDB </p>
+						<img class="mobile-view" src="assets/img/local-smrt.PNG" alt="Local Directory Mobile View">
+					</a>
+				</div>
 			</div>
-
-
-
+			<div class="project-container bg-three">
+				<!-- Bob's Burgers Game -->
+				<div class="preview-overlay">
+					<a href="https://github.com/liamoconnor87/bobsburgersgame" target="_blank" rel="noopener noreferrer">
+						<h2 class="fnt-black">BOB'S BURGERS MEMORY GAME</h2>
+						<p>HTML | CSS | JavaScript | jQuery</p>
+						<img class="mobile-view" src="assets/img/bobs-smrt.PNG" alt="The Bob's Burgers Memory Game Mobile View">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="project-row">
+			<div class="project-container bg-four">
+				<!-- Myall Signs -->
+				<div class="preview-overlay">
+					<a href="https://www.myallsigns.co.uk" target="_blank" rel="noopener noreferrer">
+						<h2 class="fnt-black">MYALL SIGNS WEBSITE</h2>
+						<p>HTML | CSS | JavaScript</p>
+						<img class="mobile-view" src="assets/img/myallsigns-smrt.PNG" alt="Myall Signs Mobile View">
+					</a>
+				</div>
+			</div>
+			<div class="project-container bg-five">
+				<!-- Sewright -->
+				<div class="preview-overlay">
+					<a href="https://www.sewrightsew.co.uk" target="_blank" rel="noopener noreferrer">
+						<h2 class="fnt-black">SEWRIGHT SEWING MACHINES WEBSITE</h2>
+						<p>HTML | CSS | JavaScript</p>
+						<img class="mobile-view" src="assets/img/sewright-smrt.PNG" alt="Sewright Mobile View">
+					</a>
+				</div>
+			</div>
+			<div class="project-container bg-one">
+				<!-- Stacey Does Hair -->
+				<div class="preview-overlay">
+					<a href="https://liamoconnor87.github.io/staceydoeshair/" target="_blank" rel="noopener noreferrer">
+						<h2 class="fnt-black">STACEY DOES HAIR WEBSITE</h2>
+						<p>HTML | CSS | JavaScript</p>
+						<img class="mobile-view" src="assets/img/stacey-smrt.png" alt="Stacey Does Hair Mobile View">
+					</a>
+				</div>
+			</div>
 		</div>
 
 	</div>
-
-	<div class="information-sect bg-two web-design-sect">
-
-		<div class="project-row">
-
-			<div class="project-container" data-aos="fade-top" data-aos-duration="1000">
-
-				<a href="https://liamoconnor87.github.io/staceydoeshair/" target="_blank" rel="noopener noreferrer" aria-label="Stacey Does Hair Website">
-					<img class="mobile-view" src="assets/img/stacey-smrt.png" alt="Stacey Does Hair Mobile View">
-					<img class="desktop-view" src="assets/img/stacey-desk.png" alt="Stacey Does Hair Desktop View">
-					<div class="preview-overlay bg-black-50">
-						<h2 class="fnt-white">STACEY DOES HAIR</h2>
-					</div>
-				</a>
-
-			</div>
-
-			<div class="project-container" data-aos="fade-top" data-aos-duration="1000">
-
-				<a href="https://liamoconnor87.github.io/VisitGotham/" target="_blank" rel="noopener noreferrer" aria-label="VisitGotham Website">
-					<img class="mobile-view" src="assets/img/visitgotham-smrt.PNG" alt="Visit Gotham Mobile View">
-					<img class="desktop-view" src="assets/img/visitgotham-desk.PNG" alt="Visit Gotham Desktop View">
-					<div class="preview-overlay bg-black-50">
-						<h2 class="fnt-white">VISIT GOTHAM</h2>
-					</div>
-				</a>
-
-			</div>
-
-			<div class="project-container" data-aos="fade-top" data-aos-duration="1000">
-
-				<a href="https://sewrightsew.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Sewrightsew - Sewright Industrial Sewing Machines Website">
-					<img class="mobile-view" src="assets/img/sewright-smrt.PNG" alt="Sewright Mobile View">
-					<img class="desktop-view" src="assets/img/sewright-desk.PNG" alt="Sewright Desktop View">
-					<div class="preview-overlay bg-black-50">
-						<h2 class="fnt-white">SEWRIGHT INDUSTRIAL</h2>
-					</div>
-				</a>
-
-			</div>
-
-			<!-- <div class="project-container" data-aos="fade-top" data-aos-duration="1000">
-
-				<a href="https://local-directory.herokuapp.com" target="_blank" rel="noopener noreferrer" aria-label="Local Directory Website">
-					<img class="mobile-view" src="assets/img/local-smrt.PNG" alt="Local Directory Mobile View">
-					<img class="desktop-view" src="assets/img/local-desk.PNG" alt="Local Directory Desktop View">
-					<div class="preview-overlay bg-black-50">
-						<h2 class="fnt-white">LOCAL DIRECTORY</h2>
-					</div>
-				</a>
-
-			</div> -->
-
-		</div>
-
-
-	</div>
-
-
-	<!-- <div class="information-sect bg-three branding-sect">
-		<div class="project-row">
-
-			<div class="project-container" data-aos="fade-top" data-aos-duration="1000">
-
-				<a href="https://blackbolt-comics.herokuapp.com" target="_blank" rel="noopener noreferrer" aria-label="Blackbolt Comics Website">
-					<img class="mobile-view" src="assets/img/blackbolt-smrt.PNG" alt="Blackbolt Comics Mobile View">
-					<img class="desktop-view" src="assets/img/blackbolt-desk.PNG" alt="Blackbolt Comics Desktop View">
-					<div class="preview-overlay bg-black-50">
-						<h2 class="fnt-white">BLACKBOLT COMICS</h2>
-					</div>
-				</a>
-
-			</div>
-
-			<div class="project-container" data-aos="fade-top" data-aos-duration="1000">
-
-				<a href="https://liamoconnor87.github.io/bobsburgersgame/" target="_blank" rel="noopener noreferrer" aria-label="The Bob's Burgers Memory Game">
-					<img class="mobile-view" src="assets/img/bobs-smrt.PNG" alt="The Bob's Burgers Memory Game Mobile View">
-					<img class="desktop-view" src="assets/img/bobs-desk.PNG" alt="The Bob's Burgers Memory Game Desktop View">
-					<div class="preview-overlay bg-black-50">
-						<h2 class="fnt-white">BOB'S BURGERS MEMORY GAME</h2>
-					</div>
-				</a>
-
-			</div>
-
-		</div>
-	</div> -->
-
-
-	<!-- <div class="information-sect bg-four web-host-sect">
-	</div> -->
-
 
 	<!-- FOOTER -->
 	<footer class="footer-sect">
@@ -220,9 +150,6 @@
 					<i class="chev-icon fas fa-chevron-up"></i>
 				</a>
 			</h2>
-			<h2 onclick="toTop()" class="bk-top pointer">Back to top</h2>
-			<br>
-			<br>
 			<h1 aria-label="webDevLiam Address">
 				<span class="web">web</span><span class="dev">Dev</span><span class="liam">Liam</span>
 			</h1>
@@ -237,15 +164,14 @@
 				<p>Created by <a class="liam-link" href="https://www.webdevliam.com/" target="_blank" rel="noopener noreferrer" aria-label="webDevLiam Website">webDevLiam</a> - <a href="https://github.com/liamoconnor87" target="_blank"
 						rel="noopener noreferrer" aria-label="My GitHub Page"><i class="fas fa-code-branch"></i></a></p>
 			</div>
+			<br>
 		</div>
 
 	</footer>
 
 	<!-- JS SCRIPTS -->
-	<script type="text/javascript" src="assets/scripts/mouse_hover.js"></script>
 	<script type="text/javascript" src="assets/scripts/randomBg.js"></script>
 	<script type="text/javascript" src="assets/scripts/scroll_to.js"></script>
-	<script type="text/javascript" src="assets/scripts/screen_size_detect.js"></script>
 
 	<!-- AOS SCRIPTS -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

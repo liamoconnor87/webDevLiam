@@ -6,7 +6,7 @@
 }
 
 body{
-  font-family: 'Zilla Slab', serif;
+  font-family: 'Zilla Slab',sans-serif, serif;
   color: rgb(0, 0, 0);
   width: 100%;
   height: auto;
@@ -22,12 +22,14 @@ a{
 }
 
 .landing-page{
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
   padding-top: 91px;
   margin: 0 auto;
+
 }
 
 .welcome{
@@ -207,7 +209,7 @@ a{
 @media screen and (min-width: 500px){
 
   .landing-page{
-    padding-top: 56px;
+    padding-top: 79px;
   }
 
   .welcome{
