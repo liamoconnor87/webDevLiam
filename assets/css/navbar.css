@@ -69,6 +69,7 @@
   .navbar{
     flex-direction: row;
     padding-bottom: 0;
+    height: 81px;
   }
 
   #webdevliam-logo{
