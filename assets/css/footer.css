@@ -73,7 +73,7 @@ h2 a:hover{
 }
 
 .nav-icon-3 a{
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .icon a:hover{
@@ -125,7 +125,12 @@ h2 a:hover{
 		padding: 0 20px;
 	}
 
-	.nav-icon-1 a, .nav-icon-2 a{
+	.nav-icon-1 a{
 		font-size: 40px;
 	  }
+
+	.nav-icon-2 a {
+		font-size: 35px;
+	}
+
 }
