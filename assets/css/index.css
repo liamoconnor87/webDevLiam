@@ -21,6 +21,136 @@ a{
   cursor: pointer;
 }
 
+/* TWO COLUMN LAYOUT */
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.left-side {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: rgb(0, 0, 0);
+}
+
+.left-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding-bottom: 0.1rem;
+  border-bottom: 3px solid rgb(240, 109, 255);
+}
+
+.email {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.email a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email a:hover {
+  color: rgb(255, 71, 71);
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 2.5rem;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Icon color classes for shuffle */
+.icon a {
+  color: #fff !important;
+}
+
+.icon a:hover {
+  color: rgb(35, 222, 241) !important;
+}
+
+.icon-2 a {
+  color: #fff !important;
+}
+
+.icon-2 a:hover {
+  color: rgb(87, 247, 2) !important;
+}
+
+.icon-3 a {
+  color: #fff !important;
+}
+
+.icon-3 a:hover {
+  color: rgb(248, 247, 2) !important;
+}
+
+.icon-4 a {
+  color: #fff !important;
+}
+
+.icon-4 a:hover {
+  color: rgb(240, 109, 255) !important;
+}
+
+.shuffle-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.shuffle-icon .nav-icon-3 a {
+  color: #fff !important;
+  font-size: 4rem !important;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Shuffle icon hover colors - applied by JS shuffle */
+.shuffle-icon .nav-icon-3.icon-4 a:hover {
+  color: rgb(240, 109, 255) !important;
+}
+
+.shuffle-icon .nav-icon-3.icon a:hover {
+  color: rgb(35, 222, 241) !important;
+}
+
+.shuffle-icon .nav-icon-3.icon-2 a:hover {
+  color: rgb(87, 247, 2) !important;
+}
+
+.shuffle-icon .nav-icon-3.icon-3 a:hover {
+  color: rgb(248, 247, 2) !important;
+}
+
+.right-side {
+  width: 50%;
+  overflow-y: auto;
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .landing-page{
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -29,7 +159,127 @@ a{
   width: 100%;
   padding-top: 91px;
   margin: 0 auto;
+}
 
+/* PROJECT LIST STYLES */
+.project-list {
+  max-width: 800px;
+  margin: 0;
+  padding: 60px 20px 80px 20px;
+  text-align: left;
+}
+
+.list-heading {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.list-heading:first-child {
+  margin-top: 0;
+}
+
+.project-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.project-list li {
+  margin-bottom: 2.5rem;
+}
+
+.project-list li a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.project-list li a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.tech-stack {
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+.tech-stack a.ext-link {
+  color: #999;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline;
+}
+
+/* Extension link color classes */
+.ext-link.ext-icon {
+  color: #999 !important;
+}
+
+.ext-link.ext-icon:hover {
+  color: rgb(35, 222, 241) !important;
+}
+
+.ext-link.ext-icon-2 {
+  color: #999 !important;
+}
+
+.ext-link.ext-icon-2:hover {
+  color: rgb(87, 247, 2) !important;
+}
+
+.ext-link.ext-icon-3 {
+  color: #999 !important;
+}
+
+.ext-link.ext-icon-3:hover {
+  color: rgb(248, 247, 2) !important;
+}
+
+.ext-link.ext-icon-4 {
+  color: #999 !important;
+}
+
+.ext-link.ext-icon-4:hover {
+  color: rgb(240, 109, 255) !important;
+}
+
+/* TEXT COLOR CLASSES */
+.text-cyan,
+.text-cyan a {
+  color: rgb(35, 222, 241);
+}
+
+.text-red,
+.text-red a {
+  color: rgb(255, 71, 71);
+}
+
+.text-yel,
+.text-yel a {
+  color: rgb(248, 247, 2);
+}
+
+.text-green,
+.text-green a {
+  color: rgb(87, 247, 2);
+}
+
+.text-lilac,
+.text-lilac a {
+  color: rgb(240, 109, 255);
 }
 
 .welcome{
@@ -271,4 +521,107 @@ a{
     margin: 0 auto;
   }
 
+}
+
+/* MOBILE RESPONSIVE - TWO COLUMN LAYOUT */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .left-side {
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+
+  .left-content {
+    gap: 1.5rem;
+  }
+
+  .logo {
+    font-size: 3.5rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .email {
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    gap: 1.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+
+  .shuffle-icon .nav-icon-3 a {
+    font-size: 2rem !important;
+  }
+
+  .right-side {
+    padding-top: 20px;
+    align-items: flex-start;
+  }
+
+  .project-list {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .list-heading {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .project-list li a {
+    font-size: 1rem;
+  }
+
+  .project-list li {
+    margin-bottom: 2rem;
+  }
+
+  .tech-stack {
+    font-size: 0.8rem;
+  }
+}
+
+/* TABLET RESPONSIVE */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .left-side,
+  .right-side {
+    padding: 35px;
+  }
+
+  .logo {
+    font-size: 3.5rem;
+  }
+
+  .email {
+    font-size: 1.1rem;
+  }
+
+  .social-icons a {
+    font-size: 2.3rem;
+  }
+
+  .shuffle-icon .nav-icon-3 a {
+    font-size: 3.5rem !important;
+  }
+
+  .list-heading {
+    font-size: 2.2rem;
+  }
+
+  .project-list li a {
+    font-size: 1.4rem;
+  }
 }
