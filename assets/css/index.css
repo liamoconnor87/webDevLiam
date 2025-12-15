@@ -217,10 +217,18 @@ a{
 
 .tech-stack a.ext-link {
   color: #999;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-decoration: none;
   transition: color 0.3s ease;
   display: inline;
+}
+
+.tech-stack a.ext-link-3 {
+  font-size: 1.3rem;
+}
+
+.project-list li .tech-stack:has(.ext-link-3) {
+  margin-bottom: 0.5rem;
 }
 
 /* Extension link color classes */

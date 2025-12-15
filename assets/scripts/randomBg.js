@@ -138,14 +138,19 @@ function shuffleColours() {
 
 		if (randBgFive == "cyan") {
 			$(".text-five").addClass("text-cyan");
+			$(".ext-link-3").addClass("ext-icon");
 		} else if (randBgFive == "yellow") {
 			$(".text-five").addClass("text-yel");
+			$(".ext-link-3").addClass("ext-icon-3");
 		} else if (randBgFive == "lilac") {
 			$(".text-five").addClass("text-lilac");
+			$(".ext-link-3").addClass("ext-icon-4");
 		} else if (randBgFive == "green") {
 			$(".text-five").addClass("text-green");
+			$(".ext-link-3").addClass("ext-icon-2");
 		} else if (randBgFive == "red") {
 			$(".text-five").addClass("text-red");
+			$(".ext-link-3").addClass("ext-icon-4");
 		} else {
 			console.log("Error with BG Five");
 		}
@@ -205,5 +210,6 @@ function reshuffleBgColours() {
 	$(".text-four").removeClass("text-lilac");
 	$(".text-four").removeClass("text-green");
 	$(".text-four").removeClass("text-red");
+	$(".ext-link-3").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4");
 	shuffleColours();
 };
