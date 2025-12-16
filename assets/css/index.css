@@ -53,6 +53,20 @@ a{
   border-bottom: 3px solid rgb(240, 109, 255);
 }
 
+.name-title {
+  text-align: center;
+}
+
+.name,
+.title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
 .email {
   font-size: 1.2rem;
   margin-bottom: 0;
@@ -117,6 +131,10 @@ a{
 .shuffle-icon {
   display: flex;
   justify-content: center;
+}
+
+.shuffle-icon-mobile {
+  display: none;
 }
 
 .shuffle-icon .nav-icon-3 a {
@@ -545,7 +563,7 @@ a{
 
   .left-side {
     min-height: auto;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .left-content {
@@ -563,10 +581,23 @@ a{
 
   .social-icons {
     gap: 1.5rem;
+    margin-bottom: 0;
   }
 
   .social-icons a {
     font-size: 1.5rem;
+  }
+
+  .shuffle-icon-desktop {
+    display: none;
+  }
+
+  .shuffle-icon-mobile {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .shuffle-icon .nav-icon-3 a {
@@ -576,6 +607,7 @@ a{
   .right-side {
     padding-top: 20px;
     align-items: flex-start;
+    flex-direction: column;
   }
 
   .project-list {
