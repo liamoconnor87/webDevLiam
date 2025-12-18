@@ -10,6 +10,32 @@
   margin-bottom: 0;
 }
 
+.trr-title-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-height: 2rem;
+}
+
+.trr-title-container a {
+  grid-column: 1;
+  grid-row: 1;
+  white-space: nowrap;
+}
+
+.trr-title-normal {
+  display: block;
+}
+
+.trr-title-special {
+  display: block;
+}
+
+.trr-title-hidden {
+  visibility: hidden !important;
+}
+
 .trr-switch-container {
   display: inline-flex;
   align-items: center;
@@ -95,14 +121,13 @@ input:checked + .trr-slider:before {
   }
 }
 
-/* ACTIVE TITLE STYLING */
-.trr-title-active {
+/* SPECIAL TITLE STYLING */
+.trr-title-special {
   font-family: "Sixtyfour", sans-serif !important;
   color: rgb(23, 232, 138) !important;
   text-shadow: 5px 5px 0 rgb(8, 14, 24) !important;
   font-size: 1.1rem !important;
   font-weight: 300 !important;
-  display: inline-block !important;
   width: auto !important;
   height: auto !important;
   line-height: 1.8rem !important;
@@ -111,27 +136,27 @@ input:checked + .trr-slider:before {
   text-decoration: underline !important;
 }
 
-.trr-title-active.trr-underline-cyan:hover,
-.trr-title-active.trr-underline-cyan.trr-switch-active {
+.trr-title-special.trr-underline-cyan:hover,
+.trr-title-special.trr-underline-cyan.trr-switch-active {
   text-decoration-color: rgb(35, 222, 241) !important;
 }
 
-.trr-title-active.trr-underline-lilac:hover,
-.trr-title-active.trr-underline-lilac.trr-switch-active {
+.trr-title-special.trr-underline-lilac:hover,
+.trr-title-special.trr-underline-lilac.trr-switch-active {
   text-decoration-color: rgb(240, 109, 255) !important;
 }
 
-.trr-title-active.trr-underline-yellow:hover,
-.trr-title-active.trr-underline-yellow.trr-switch-active {
+.trr-title-special.trr-underline-yellow:hover,
+.trr-title-special.trr-underline-yellow.trr-switch-active {
   text-decoration-color: rgb(248, 247, 2) !important;
 }
 
-.trr-title-active.trr-underline-green:hover,
-.trr-title-active.trr-underline-green.trr-switch-active {
+.trr-title-special.trr-underline-green:hover,
+.trr-title-special.trr-underline-green.trr-switch-active {
   text-decoration-color: rgb(87, 247, 2) !important;
 }
 
-.trr-title-active.trr-underline-red:hover,
-.trr-title-active.trr-underline-red.trr-switch-active {
+.trr-title-special.trr-underline-red:hover,
+.trr-title-special.trr-underline-red.trr-switch-active {
   text-decoration-color: rgb(255, 71, 71) !important;
 }
