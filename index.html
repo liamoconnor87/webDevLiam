@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/trr.css">
 
 	<!-- CSS for JS SCRIPTS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/JS_animations.css">
@@ -26,7 +27,7 @@
 	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sixtyfour:wght@400&display=swap" rel="stylesheet">
 
 	<!-- JQUERY CDN -->
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -84,10 +85,36 @@
 			<div class="project-list">
 				<h2 class="list-heading">CURRENT PROJECTS</h2>
 				<ul>
-				<li class="text-one">
-					<a href="https://github.com/liamoconnor87/thereadingruler" target="_blank" rel="noopener noreferrer">THE READING RULER</a>
-					<p class="tech-stack"><a href="https://chromewebstore.google.com/detail/jkennjdaolcdgmkddhnojdhhjcebdfpe?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer" class="ext-link ext-link-1">Chrome</a> or <a href="https://addons.mozilla.org/en-GB/firefox/addon/the-reading-ruler/" target="_blank" rel="noopener noreferrer" class="ext-link ext-link-2">Firefox</a></p>
-				</li>
+			<li class="text-one">
+				<div class="trr-title-row">
+					<a href="https://github.com/liamoconnor87/thereadingruler" target="_blank" rel="noopener noreferrer" class="trr-title-active">THE READING RULER</a>
+					<div class="trr-switch-container">
+						<label class="trr-switch">
+							<input id="trr-demo-checkbox" type="checkbox">
+							<span class="trr-slider"></span>
+						</label>
+					</div>
+				</div>
+				<p class="tech-stack"><a href="https://chromewebstore.google.com/detail/jkennjdaolcdgmkddhnojdhhjcebdfpe?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer" class="ext-link ext-link-1">Chrome</a> or <a href="https://addons.mozilla.org/en-GB/firefox/addon/the-reading-ruler/" target="_blank" rel="noopener noreferrer" class="ext-link ext-link-2">Firefox</a></p>
+				<p class="tech-stack">HTML | CSS | JavaScript</p>
+			</li>
+				</ul>
+
+				<h2 class="list-heading">PAST PROJECTS</h2>
+				<ul>
+					<li class="text-one">
+						<a href="https://github.com/liamoconnor87/local_directory" target="_blank" rel="noopener noreferrer">LOCAL DIRECTORY APP</a>
+						<p class="tech-stack">Python | Flask | MongoDB | HTML | CSS | JavaScript | jQuery</p>
+					</li>
+					<li class="text-four">
+						<a href="https://github.com/liamoconnor87/bobsburgersgame" target="_blank" rel="noopener noreferrer">BOB'S BURGERS MEMORY GAME</a>
+						<p class="tech-stack"><a href="https://liamoconnor87.github.io/bobsburgersgame/" target="_blank" rel="noopener noreferrer" class="ext-link ext-link-3">Play ></a></p>
+						<p class="tech-stack">HTML | CSS | JavaScript | jQuery</p>
+					</li>
+					<li class="text-five">
+						<a href="https://github.com/liamoconnor87/blackboltcomics" target="_blank" rel="noopener noreferrer">BLACKBOLT COMICS WEBSITE</a>
+						<p class="tech-stack">Python | Django | PostgreSQL | AWS | HTML | CSS | JavaScript | jQuery</p>
+					</li>
 				</ul>
 
 				<h2 class="list-heading">WEBSITES</h2>
@@ -100,22 +127,13 @@
 						<a href="https://www.sewrightsew.co.uk" target="_blank" rel="noopener noreferrer">SEWRIGHT SEWING MACHINES WEBSITE</a>
 						<p class="tech-stack">HTML | CSS | JavaScript</p>
 					</li>
-				</ul>
-
-				<h2 class="list-heading">OLD PROJECTS</h2>
-				<ul>
-				<li class="text-four">
-					<a href="https://github.com/liamoconnor87/bobsburgersgame" target="_blank" rel="noopener noreferrer">BOB'S BURGERS MEMORY GAME</a>
-					<p class="tech-stack"><a href="https://liamoconnor87.github.io/bobsburgersgame/" target="_blank" rel="noopener noreferrer" class="ext-link ext-link-3">Play ></a></p>
-						<p class="tech-stack">HTML | CSS | JavaScript | jQuery</p>
+					<li class="text-four">
+						<a href="https://www.steffiemyalltherapy.co.uk" target="_blank" rel="noopener noreferrer">STEFFIE MYALL THERAPY</a>
+						<p class="tech-stack">HTML | CSS | JavaScript | Squarespace</p>
 					</li>
 					<li class="text-five">
-						<a href="https://github.com/liamoconnor87/blackboltcomics" target="_blank" rel="noopener noreferrer">BLACKBOLT COMICS WEBSITE</a>
-						<p class="tech-stack">HTML | CSS | JavaScript | Python | jQuery | Django | PostgreSQL | AWS</p>
-					</li>
-					<li class="text-one">
-						<a href="https://github.com/liamoconnor87/local_directory" target="_blank" rel="noopener noreferrer">LOCAL DIRECTORY APP</a>
-						<p class="tech-stack">HTML | CSS | JavaScript | Python | Flask | jQuery | MongoDB</p>
+						<a href="https://www.leightreasures.co.uk" target="_blank" rel="noopener noreferrer">LEIGH TREASURES PRESCHOOL</a>
+						<p class="tech-stack">HTML | CSS | JavaScript | Squarespace</p>
 					</li>
 					<li class="text-two">
 						<a href="https://liamoconnor87.github.io/VisitGotham/" target="_blank" rel="noopener noreferrer">VISIT GOTHAM</a>
@@ -136,6 +154,7 @@
 	<!-- JS SCRIPTS -->
 	<script type="text/javascript" src="assets/scripts/randomBg.js"></script>
 	<script type="text/javascript" src="assets/scripts/scroll_to.js"></script>
+	<script type="text/javascript" src="assets/scripts/trr.js"></script>
 
 </body>
 
