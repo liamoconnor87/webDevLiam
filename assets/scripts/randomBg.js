@@ -41,26 +41,29 @@ function shuffleColours() {
 
 	// Functions that determine which array sets which colour of text.
 	function backgroundOne() {
+		// Remove previous underline color classes from special title
+		var $specialTitle = $(".trr-title-special");
+		$specialTitle.removeClass("trr-underline-cyan trr-underline-yellow trr-underline-lilac trr-underline-green trr-underline-red");
 		if (randBgOne == "cyan") {
 			$(".text-one").addClass("text-cyan");
 			$(".nav-icon-3").addClass("icon-4");
-			$(".trr-title-active").addClass("trr-underline-cyan");
+			$specialTitle.addClass("trr-underline-cyan");
 		} else if (randBgOne == "yellow") {
 			$(".text-one").addClass("text-yel");
 			$(".nav-icon-3").addClass("icon");
-			$(".trr-title-active").addClass("trr-underline-yellow");
+			$specialTitle.addClass("trr-underline-yellow");
 		} else if (randBgOne == "lilac") {
 			$(".text-one").addClass("text-lilac");
 			$(".nav-icon-3").addClass("icon-2");
-			$(".trr-title-active").addClass("trr-underline-lilac");
+			$specialTitle.addClass("trr-underline-lilac");
 		} else if (randBgOne == "green") {
 			$(".text-one").addClass("text-green");
 			$(".nav-icon-3").addClass("icon-3");
-			$(".trr-title-active").addClass("trr-underline-green");
+			$specialTitle.addClass("trr-underline-green");
 		} else if (randBgOne == "red") {
 			$(".text-one").addClass("text-red");
 			$(".nav-icon-3").addClass("icon-4");
-			$(".trr-title-active").addClass("trr-underline-red");
+			$specialTitle.addClass("trr-underline-red");
 		} else {
 			console.log("Error with BG One");
 		}
@@ -173,27 +176,12 @@ function shuffleColours() {
 }
 
 function reshuffleBgColours() {
-	$(".text-five").removeClass("text-cyan");
-	$(".text-five").removeClass("text-yel");
-	$(".text-five").removeClass("text-lilac");
-	$(".text-five").removeClass("text-green");
-	$(".text-five").removeClass("text-red");
-	$(".text-one").removeClass("text-cyan");
-	$(".nav-icon-3").removeClass("icon-4");
+	$(".text-five").removeClass("text-cyan text-yel text-lilac text-green text-red");
+	$(".text-one").removeClass("text-cyan text-yel text-lilac text-green text-red");
+	$(".nav-icon-3").removeClass("icon icon-2 icon-3 icon-4");
 	$(".ext-link-1").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4");
-	$(".trr-title-active").removeClass("trr-underline-cyan");
-	$(".text-one").removeClass("text-yel");
-	$(".nav-icon-3").removeClass("icon");
-	$(".trr-title-active").removeClass("trr-underline-yellow");
-	$(".text-one").removeClass("text-lilac");
-	$(".nav-icon-3").removeClass("icon-2");
-	$(".trr-title-active").removeClass("trr-underline-lilac");
-	$(".text-one").removeClass("text-green");
-	$(".nav-icon-3").removeClass("icon-3");
-	$(".trr-title-active").removeClass("trr-underline-green");
-	$(".text-one").removeClass("text-red");
-	$(".nav-icon-3").removeClass("icon-4");
-	$(".trr-title-active").removeClass("trr-underline-red");
+	// Remove underline color classes from special title
+	$(".trr-title-special").removeClass("trr-underline-cyan trr-underline-yellow trr-underline-lilac trr-underline-green trr-underline-red");
 	$(".text-two").removeClass("text-cyan");
 	$(".nav-icon-2").removeClass("icon");
 	$(".ext-link-2").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4");

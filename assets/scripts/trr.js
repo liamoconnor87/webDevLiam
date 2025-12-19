@@ -93,39 +93,6 @@
         }
     }
 
-    // Auto-toggle function - glitch effect
-    function startTitleToggle() {
-        if (titleToggleInterval) {
-            clearTimeout(titleToggleInterval);
-            titleToggleInterval = null;
-        }
-        function glitchLoop() {
-            if (specialTitle && normalTitle && !isEnabled) {
-                // Show special title (glitch effect)
-                specialTitle.classList.remove('trr-title-hidden');
-                normalTitle.classList.add('trr-title-hidden');
-
-                // Return to normal title after 350ms
-                setTimeout(function() {
-                    if (!isEnabled) {
-                        specialTitle.classList.add('trr-title-hidden');
-                        normalTitle.classList.remove('trr-title-hidden');
-                    }
-                    // Schedule next glitch with random delay between 3s and 6s
-                    if (!isEnabled) {
-                        var nextDelay = 3000 + Math.random() * 3000;
-                        titleToggleInterval = setTimeout(glitchLoop, nextDelay);
-                    }
-                }, 350); // Show special title for 350ms
-            } else {
-                // If enabled, don't schedule next glitch
-                titleToggleInterval = null;
-            }
-        }
-        // Start the first glitch after a random delay
-        var initialDelay = 3000 + Math.random() * 3000;
-        titleToggleInterval = setTimeout(glitchLoop, initialDelay);
-    }
 
     // Initialize
     if (checkbox) {
@@ -135,7 +102,5 @@
         // Set initial state
         toggleOverlay();
 
-        // Start auto-toggle
-        startTitleToggle();
     }
 })();
