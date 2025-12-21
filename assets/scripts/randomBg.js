@@ -102,22 +102,27 @@ function shuffleColours() {
 			$(".text-three").addClass("text-cyan");
 			$(".nav-icon-1").addClass("icon");
 			$(".ext-link-1").addClass("ext-icon");
+            $(".ext-link-1").removeClass("text-yel text-lilac text-green text-red").addClass("text-cyan");
 		} else if (randBgThree == "yellow") {
 			$(".text-three").addClass("text-yel");
 			$(".nav-icon-1").addClass("icon-3");
 			$(".ext-link-1").addClass("ext-icon-3");
+            $(".ext-link-1").removeClass("text-cyan text-lilac text-green text-red").addClass("text-yel");
 		} else if (randBgThree == "lilac") {
 			$(".text-three").addClass("text-lilac");
 			$(".nav-icon-1").addClass("icon-4");
 			$(".ext-link-1").addClass("ext-icon-4");
+            $(".ext-link-1").removeClass("text-cyan text-yel text-green text-red").addClass("text-lilac");
 		} else if (randBgThree == "green") {
 			$(".text-three").addClass("text-green");
 			$(".nav-icon-1").addClass("icon-2");
 			$(".ext-link-1").addClass("ext-icon-2");
+            $(".ext-link-1").removeClass("text-cyan text-yel text-lilac text-red").addClass("text-green");
 		}  else if (randBgThree == "red") {
 			$(".text-three").addClass("text-red");
 			$(".nav-icon-1").addClass("icon-2");
 			$(".ext-link-1").addClass("ext-icon-2");
+            $(".ext-link-1").removeClass("text-cyan text-yel text-lilac text-green").addClass("text-red");
 		} else {
 			console.log("Error with BG Three");
 		}
@@ -147,18 +152,23 @@ function shuffleColours() {
 		if (randBgFive == "cyan") {
 			$(".text-five").addClass("text-cyan");
 			$(".ext-link-3").addClass("ext-icon");
+            $(".ext-link-2").removeClass("text-yel text-lilac text-green text-red").addClass("text-cyan");
 		} else if (randBgFive == "yellow") {
 			$(".text-five").addClass("text-yel");
 			$(".ext-link-3").addClass("ext-icon-3");
+            $(".ext-link-2").removeClass("text-cyan text-lilac text-green text-red").addClass("text-yel");
 		} else if (randBgFive == "lilac") {
 			$(".text-five").addClass("text-lilac");
 			$(".ext-link-3").addClass("ext-icon-4");
+            $(".ext-link-2").removeClass("text-cyan text-yel text-green text-red").addClass("text-lilac");
 		} else if (randBgFive == "green") {
 			$(".text-five").addClass("text-green");
 			$(".ext-link-3").addClass("ext-icon-2");
+            $(".ext-link-2").removeClass("text-cyan text-yel text-lilac text-red").addClass("text-green");
 		} else if (randBgFive == "red") {
 			$(".text-five").addClass("text-red");
 			$(".ext-link-3").addClass("ext-icon-4");
+            $(".ext-link-2").removeClass("text-cyan text-yel text-lilac text-green").addClass("text-red");
 		} else {
 			console.log("Error with BG Five");
 		}
