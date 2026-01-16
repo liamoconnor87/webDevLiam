@@ -108,10 +108,17 @@ input:checked + .trr-slider:before {
   border-top: 2px solid rgb(240, 109, 255);
 }
 
-/* Hide switch on mobile and tablet */
-@media screen and (max-width: 1024px) {
+/* Hide switch on touch devices (tablets, phones) */
+@media (pointer: coarse) {
   .trr-switch-container {
     display: none !important;
+  }
+}
+
+/* Only show switch on devices with precise pointer and hover capability */
+@media (pointer: fine) and (hover: hover) {
+  .trr-switch-container {
+    display: inline-flex !important;
   }
 }
 
