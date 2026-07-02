@@ -2,9 +2,10 @@
   color: rgb(255, 255, 255);
   font-family: "Tourney", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 1000;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.8rem;
 }
 
 .project-list li a.julies-demiplane-title:hover {
