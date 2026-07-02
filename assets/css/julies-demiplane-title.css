@@ -1,0 +1,42 @@
+.project-list li a.julies-demiplane-title {
+  color: rgb(255, 255, 255);
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.project-list li a.julies-demiplane-title:hover {
+  color: rgb(255, 255, 255);
+}
+
+.julies-demiplane-title-outline-word {
+  text-shadow: 5px 2px 0 var(--outline-shadow-colour, rgb(70, 198, 2));
+}
+
+.julies-demiplane-title-asterisk-word {
+  text-shadow: 1px 4px 0 var(--outline-shadow-colour, rgb(192, 87, 204));
+}
+
+/* Shadow colour classes - same 5-colour palette used elsewhere on the site,
+   darkened 20% so the white lettering keeps enough contrast against them */
+.outline-shadow-cyan {
+  --outline-shadow-colour: rgb(28, 178, 193);
+}
+
+.outline-shadow-red {
+  --outline-shadow-colour: rgb(204, 57, 57);
+}
+
+.outline-shadow-yellow {
+  --outline-shadow-colour: rgb(159, 159, 0);
+}
+
+.outline-shadow-green {
+  --outline-shadow-colour: rgb(70, 198, 2);
+}
+
+.outline-shadow-lilac {
+  --outline-shadow-colour: rgb(192, 87, 204);
+}

@@ -1,3 +1,13 @@
+function outlineShadowClass(colourName) {
+	if (colourName == "cyan") return "outline-shadow-cyan";
+	if (colourName == "yellow") return "outline-shadow-yellow";
+	if (colourName == "lilac") return "outline-shadow-lilac";
+	if (colourName == "green") return "outline-shadow-green";
+	if (colourName == "red") return "outline-shadow-red";
+	console.log("Error with outline shadow colour");
+	return "";
+}
+
 function shuffleColours() {
 	// Shuffles the Array bgColoursArray and returns its shuffled order.
 	function shufflesColours() {
@@ -117,6 +127,8 @@ function shuffleColours() {
 			console.log("Error with BG Three");
 		}
 
+		$(".julies-demiplane-title-outline-word").addClass(outlineShadowClass(randBgThree));
+
 	}
 
 	function colourFour() {
@@ -135,6 +147,7 @@ function shuffleColours() {
 			console.log("Error with BG Four");
 		}
 
+		$(".julies-demiplane-title-asterisk-word").addClass(outlineShadowClass(randBgFour));
 	}
 
 	function colourFive() {
@@ -198,6 +211,8 @@ function reshuffleColours() {
 	$(".nav-icon-1").removeClass("icon-2");
 	$(".text-three").removeClass("text-red");
 	$(".nav-icon-1").removeClass("icon-2");
+	$(".julies-demiplane-title-outline-word").removeClass("outline-shadow-cyan outline-shadow-yellow outline-shadow-lilac outline-shadow-green outline-shadow-red");
+	$(".julies-demiplane-title-asterisk-word").removeClass("outline-shadow-cyan outline-shadow-yellow outline-shadow-lilac outline-shadow-green outline-shadow-red");
 	$(".text-four").removeClass("text-cyan");
 	$(".text-four").removeClass("text-yel");
 	$(".text-four").removeClass("text-lilac");
