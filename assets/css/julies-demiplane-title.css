@@ -40,3 +40,9 @@
 .outline-shadow-lilac {
   --outline-shadow-colour: rgb(192, 87, 204);
 }
+
+@media screen and (max-width: 768px) {
+  .project-list li a span {
+    font-size: 1.5rem;
+  }
+}
