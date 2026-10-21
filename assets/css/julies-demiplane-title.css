@@ -13,33 +13,33 @@
 }
 
 .julies-demiplane-title-outline-word {
-  text-shadow: 5px 2px 0 var(--outline-shadow-colour, rgb(70, 198, 2));
+  text-shadow: 5px 2px 0 var(--outline-shadow-colour, rgb(0, 204, 118));
 }
 
 .julies-demiplane-title-asterisk-word {
-  text-shadow: 1px 4px 0 var(--outline-shadow-colour, rgb(192, 87, 204));
+  text-shadow: 1px 4px 0 var(--outline-shadow-colour, rgb(170, 0, 204));
 }
 
 /* Shadow colour classes - same 5-colour palette used elsewhere on the site,
    darkened 20% so the white lettering keeps enough contrast against them */
 .outline-shadow-cyan {
-  --outline-shadow-colour: rgb(28, 178, 193);
+  --outline-shadow-colour: rgb(0, 204, 204);
 }
 
 .outline-shadow-red {
-  --outline-shadow-colour: rgb(204, 57, 57);
+  --outline-shadow-colour: rgb(204, 30, 43);
 }
 
 .outline-shadow-yellow {
-  --outline-shadow-colour: rgb(159, 159, 0);
+  --outline-shadow-colour: rgb(204, 190, 77);
 }
 
 .outline-shadow-green {
-  --outline-shadow-colour: rgb(70, 198, 2);
+  --outline-shadow-colour: rgb(0, 204, 118);
 }
 
 .outline-shadow-lilac {
-  --outline-shadow-colour: rgb(192, 87, 204);
+  --outline-shadow-colour: rgb(170, 0, 204);
 }
 
 @media screen and (max-width: 768px) {
