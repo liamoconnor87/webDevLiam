@@ -598,10 +598,6 @@ a{
     font-size: 1.5rem;
   }
 
-  .shuffle-icon-desktop {
-    display: none;
-  }
-
   .shuffle-icon-mobile {
      display: flex;
      width: 100%;
