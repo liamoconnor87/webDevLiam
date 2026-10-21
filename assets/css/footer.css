@@ -1,5 +1,5 @@
 footer{
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 11, 26);
 	width: 100%;
 	height: auto;
 	color: rgb(255, 255, 255);
@@ -21,7 +21,7 @@ h2 a{
 }
 
 h2 a:hover{
-	color: rgb(255, 71, 71);
+	color: rgb(255, 37, 54);
 }
 
 .contact-sect h1, .contact-sect h2,
@@ -65,7 +65,7 @@ h2 a:hover{
 
 .em:hover{
 	text-decoration: underline;
-	color: rgb(240, 109, 255);
+	color: rgb(212, 0, 255);
 }
 
 .nav-icon-1 a, .nav-icon-2 a{
@@ -77,23 +77,23 @@ h2 a:hover{
 }
 
 .icon a:hover{
-	color: rgb(35, 222, 241);
+	color: rgb(0, 255, 255);
 }
 
 .icon-2 a:hover{
-	color: rgb(87, 247, 2);
+	color: rgb(0, 255, 148);
 }
 
 .icon-3 a:hover{
-	color: rgb(248, 247, 2);
+	color: rgb(255, 237, 96);
 }
 
 .icon-4 a:hover{
-	color: rgb(240, 109, 255);
+	color: rgb(212, 0, 255);
 }
 
 .footer-link a:hover{
-	color: rgb(255, 71, 71);
+	color: rgb(255, 37, 54);
 }
 
 /* CREATED BY WEBDEVLIAM */

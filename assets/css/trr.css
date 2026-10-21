@@ -86,7 +86,7 @@
 }
 
 input:checked + .trr-slider {
-  background-color: rgb(240, 109, 255);
+  background-color: rgb(212, 0, 255);
 }
 
 input:checked + .trr-slider:before {
@@ -104,8 +104,8 @@ input:checked + .trr-slider:before {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-top: 2px solid rgb(240, 109, 255);
+  background-color: rgba(0, 11, 26, 0.7);
+  border-top: 2px solid rgb(212, 0, 255);
 }
 
 /* Hide switch on touch devices (tablets, phones) */
@@ -146,21 +146,21 @@ input:checked + .trr-slider:before {
 }
 
 .trr-title-special.trr-underline-cyan {
-  text-decoration-color: rgb(35, 222, 241) !important;
+  text-decoration-color: rgb(0, 255, 255) !important;
 }
 
 .trr-title-special.trr-underline-lilac {
-  text-decoration-color: rgb(240, 109, 255) !important;
+  text-decoration-color: rgb(212, 0, 255) !important;
 }
 
 .trr-title-special.trr-underline-yellow {
-  text-decoration-color: rgb(248, 247, 2) !important;
+  text-decoration-color: rgb(255, 237, 96) !important;
 }
 
 .trr-title-special.trr-underline-green {
-  text-decoration-color: rgb(87, 247, 2) !important;
+  text-decoration-color: rgb(0, 255, 148) !important;
 }
 
 .trr-title-special.trr-underline-red {
-  text-decoration-color: rgb(255, 71, 71) !important;
+  text-decoration-color: rgb(255, 37, 54) !important;
 }

@@ -1,10 +1,10 @@
 /* NAVBAR  */
 .navbar-bg{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 11, 26, 0.5);
 }
 
 .navbar-bg-solid{
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(0, 11, 26, 1);
 }
 
 .navbar-shad{
@@ -13,21 +13,21 @@
 
 /* COLOUR PRESETS */
 .bg-red{
-	background-color: rgb(255, 71, 71);
+	background-color: rgb(255, 37, 54);
 }
 
 .bg-yel{
-	background-color: rgb(248, 247, 2);
+	background-color: rgb(255, 237, 96);
 }
 
 .bg-cyan{
-	background-color: rgb(35, 222, 241);
+	background-color: rgb(0, 255, 255);
 }
 
 .bg-green{
-	background-color: rgb(87, 247, 2);
+	background-color: rgb(0, 255, 148);
 }
 
 .bg-lilac{
-	background-color: rgb(240, 109, 255);
+	background-color: rgb(212, 0, 255);
 }

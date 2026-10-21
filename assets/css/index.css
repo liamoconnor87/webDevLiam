@@ -25,7 +25,7 @@ a{
 .container {
   display: flex;
   min-height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 11, 26);
 }
 
 .left-side {
@@ -34,7 +34,7 @@ a{
   align-items: center;
   justify-content: center;
   padding: 0 40px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 11, 26);
   min-height: 100vh;
   position: -webkit-sticky;
   position: sticky;
@@ -58,7 +58,7 @@ a{
   font-weight: 400;
   margin-bottom: 0;
   padding-bottom: 0.1rem;
-  border-bottom: 3px solid rgb(240, 109, 255);
+  border-bottom: 3px solid rgb(212, 0, 255);
 }
 
 .name-title {
@@ -87,7 +87,7 @@ a{
 }
 
 .email a:hover {
-  color: rgb(255, 71, 71);
+  color: rgb(255, 37, 54);
   text-decoration: underline;
 }
 
@@ -109,7 +109,7 @@ a{
 }
 
 .icon a:hover {
-  color: rgb(35, 222, 241) !important;
+  color: rgb(0, 255, 255) !important;
 }
 
 .icon-2 a {
@@ -117,7 +117,7 @@ a{
 }
 
 .icon-2 a:hover {
-  color: rgb(87, 247, 2) !important;
+  color: rgb(0, 255, 148) !important;
 }
 
 .icon-3 a {
@@ -125,7 +125,7 @@ a{
 }
 
 .icon-3 a:hover {
-  color: rgb(248, 247, 2) !important;
+  color: rgb(255, 237, 96) !important;
 }
 
 .icon-4 a {
@@ -133,7 +133,7 @@ a{
 }
 
 .icon-4 a:hover {
-  color: rgb(240, 109, 255) !important;
+  color: rgb(212, 0, 255) !important;
 }
 
 .shuffle-icon {
@@ -153,32 +153,32 @@ a{
 
 /* Shuffle icon hover colors - applied by JS shuffle */
 .shuffle-icon .nav-icon-3.icon-4 a:hover {
-  color: rgb(240, 109, 255) !important;
+  color: rgb(212, 0, 255) !important;
 }
 
 .shuffle-icon .nav-icon-3.icon a:hover {
-  color: rgb(35, 222, 241) !important;
+  color: rgb(0, 255, 255) !important;
 }
 
 .shuffle-icon .nav-icon-3.icon-2 a:hover {
-  color: rgb(87, 247, 2) !important;
+  color: rgb(0, 255, 148) !important;
 }
 
 .shuffle-icon .nav-icon-3.icon-3 a:hover {
-  color: rgb(248, 247, 2) !important;
+  color: rgb(255, 237, 96) !important;
 }
 
 .right-side {
   width: 50%;
   overflow-y: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 11, 26);
   padding: 40px;
   display: flex;
   align-items: center;
 }
 
 .landing-page{
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 11, 26);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -197,7 +197,7 @@ a{
 
 .list-heading {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 1px;
   margin-top: 4rem;
@@ -263,7 +263,7 @@ a{
 }
 
 .ext-link.ext-icon:hover {
-  color: rgb(35, 222, 241) !important;
+  color: rgb(0, 255, 255) !important;
 }
 
 .ext-link.ext-icon-2 {
@@ -271,7 +271,7 @@ a{
 }
 
 .ext-link.ext-icon-2:hover {
-  color: rgb(87, 247, 2) !important;
+  color: rgb(0, 255, 148) !important;
 }
 
 .ext-link.ext-icon-3 {
@@ -279,7 +279,7 @@ a{
 }
 
 .ext-link.ext-icon-3:hover {
-  color: rgb(248, 247, 2) !important;
+  color: rgb(255, 237, 96) !important;
 }
 
 .ext-link.ext-icon-4 {
@@ -287,33 +287,33 @@ a{
 }
 
 .ext-link.ext-icon-4:hover {
-  color: rgb(240, 109, 255) !important;
+  color: rgb(212, 0, 255) !important;
 }
 
 /* TEXT COLOR CLASSES */
 .text-cyan,
 .text-cyan a {
-  color: rgb(35, 222, 241);
+  color: rgb(0, 255, 255);
 }
 
 .text-red,
 .text-red a {
-  color: rgb(255, 71, 71);
+  color: rgb(255, 37, 54);
 }
 
 .text-yel,
 .text-yel a {
-  color: rgb(248, 247, 2);
+  color: rgb(255, 237, 96);
 }
 
 .text-green,
 .text-green a {
-  color: rgb(87, 247, 2);
+  color: rgb(0, 255, 148);
 }
 
 .text-lilac,
 .text-lilac a {
-  color: rgb(240, 109, 255);
+  color: rgb(212, 0, 255);
 }
 
 .welcome{
@@ -625,7 +625,7 @@ a{
   }
 
   .list-heading {
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     padding-bottom: 0.8rem;
@@ -673,7 +673,7 @@ a{
   }
 
   .list-heading {
-    font-size: 2.2rem;
+    font-size: 1.1rem;
   }
 
   .project-list li a {
