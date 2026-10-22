@@ -85,8 +85,6 @@
             if (normalTitle) {
                 normalTitle.classList.remove('trr-title-hidden');
             }
-            // Resume the auto-toggle
-            startTitleToggle();
             document.removeEventListener('mousemove', handleMouseMove);
             document.removeEventListener('mouseout', handleMouseOut);
             document.removeEventListener('mouseenter', handleMouseEnter);

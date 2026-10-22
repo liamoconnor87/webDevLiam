@@ -108,28 +108,28 @@ a{
   transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-/* Email: colour always shown */
-.email.icon a {
+/* Email: colour shown on hover */
+.email.icon a:hover {
   color: rgb(0, 255, 255) !important;
 }
 
-.email.icon-2 a {
+.email.icon-2 a:hover {
   color: rgb(255, 153, 0) !important;
 }
 
-.email.icon-3 a {
+.email.icon-3 a:hover {
   color: rgb(255, 237, 96) !important;
 }
 
-.email.icon-4 a {
+.email.icon-4 a:hover {
   color: rgb(212, 0, 255) !important;
 }
 
-.email.icon-5 a {
+.email.icon-5 a:hover {
   color: rgb(0, 255, 148) !important;
 }
 
-.email.icon-6 a {
+.email.icon-6 a:hover {
   color: rgb(255, 37, 54) !important;
 }
 
@@ -283,7 +283,7 @@ a{
   font-size: 1.3rem;
 }
 
-.project-list li .tech-stack:has(.ext-link-3) {
+.project-list li .tech-stack:has(.ext-link-3, .ext-link-4) {
   margin-bottom: 0.5rem;
 }
 
@@ -326,6 +326,14 @@ a{
 
 .ext-link.ext-icon-5:hover {
   color: rgb(0, 255, 148) !important;
+}
+
+.ext-link.ext-icon-6 {
+  color: #999 !important;
+}
+
+.ext-link.ext-icon-6:hover {
+  color: rgb(255, 37, 54) !important;
 }
 
 /* TEXT COLOR CLASSES */

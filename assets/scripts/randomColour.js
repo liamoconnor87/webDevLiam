@@ -9,6 +9,26 @@ function outlineShadowClass(colourName) {
 	return "";
 }
 
+function extIconClass(colourName) {
+	if (colourName == "cyan") return "ext-icon";
+	if (colourName == "yellow") return "ext-icon-3";
+	if (colourName == "lilac") return "ext-icon-4";
+	if (colourName == "green") return "ext-icon-2";
+	if (colourName == "red") return "ext-icon-6";
+	if (colourName == "teal") return "ext-icon-5";
+	console.log("Error with ext icon colour");
+	return "";
+}
+
+// Picks a colour from the full palette that isn't one of the excluded (nearby) colours.
+function pickColourAwayFrom(excludedColours) {
+	let palette = ["cyan", "lilac", "yellow", "green", "red", "teal"];
+	let available = palette.filter(function (colour) {
+		return excludedColours.indexOf(colour) === -1;
+	});
+	return available[Math.floor(Math.random() * available.length)];
+}
+
 function shuffleColours() {
 	// Shuffles the Array bgColoursArray and returns its shuffled order.
 	function shufflesColours() {
@@ -86,27 +106,21 @@ function shuffleColours() {
 		if (randBgTwo == "cyan") {
 			$(".text-two").addClass("text-cyan");
 			$(".nav-icon-2").addClass("icon");
-			$(".ext-link-2").addClass("ext-icon");
 		} else if (randBgTwo == "yellow") {
 			$(".text-two").addClass("text-yel");
 			$(".nav-icon-2").addClass("icon-3");
-			$(".ext-link-2").addClass("ext-icon-3");
 		} else if (randBgTwo == "lilac") {
 			$(".text-two").addClass("text-lilac");
 			$(".nav-icon-2").addClass("icon-4");
-			$(".ext-link-2").addClass("ext-icon-4");
 		} else if (randBgTwo == "green") {
 			$(".text-two").addClass("text-green");
 			$(".nav-icon-2").addClass("icon-2");
-			$(".ext-link-2").addClass("ext-icon-2");
 		}else if (randBgTwo == "red") {
 			$(".text-two").addClass("text-red");
 			$(".nav-icon-2").addClass("icon-6");
-			$(".ext-link-2").addClass("ext-icon-2");
 		} else if (randBgTwo == "teal") {
 			$(".text-two").addClass("text-teal");
 			$(".nav-icon-2").addClass("icon-5");
-			$(".ext-link-2").addClass("ext-icon-5");
 		} else {
 			console.log("Error with BG Two");
 		}
@@ -117,27 +131,21 @@ function shuffleColours() {
 		if (randBgThree == "cyan") {
 			$(".text-three").addClass("text-cyan");
 			$(".nav-icon-1").addClass("icon");
-			$(".ext-link-1").addClass("ext-icon");
 		} else if (randBgThree == "yellow") {
 			$(".text-three").addClass("text-yel");
 			$(".nav-icon-1").addClass("icon-3");
-			$(".ext-link-1").addClass("ext-icon-3");
 		} else if (randBgThree == "lilac") {
 			$(".text-three").addClass("text-lilac");
 			$(".nav-icon-1").addClass("icon-4");
-			$(".ext-link-1").addClass("ext-icon-4");
 		} else if (randBgThree == "green") {
 			$(".text-three").addClass("text-green");
 			$(".nav-icon-1").addClass("icon-2");
-			$(".ext-link-1").addClass("ext-icon-2");
 		}  else if (randBgThree == "red") {
 			$(".text-three").addClass("text-red");
 			$(".nav-icon-1").addClass("icon-6");
-			$(".ext-link-1").addClass("ext-icon-2");
 		} else if (randBgThree == "teal") {
 			$(".text-three").addClass("text-teal");
 			$(".nav-icon-1").addClass("icon-5");
-			$(".ext-link-1").addClass("ext-icon-5");
 		} else {
 			console.log("Error with BG Three");
 		}
@@ -177,22 +185,16 @@ function shuffleColours() {
 
 		if (randBgFive == "cyan") {
 			$(".text-five").addClass("text-cyan");
-			$(".ext-link-3").addClass("ext-icon");
 		} else if (randBgFive == "yellow") {
 			$(".text-five").addClass("text-yel");
-			$(".ext-link-3").addClass("ext-icon-3");
 		} else if (randBgFive == "lilac") {
 			$(".text-five").addClass("text-lilac");
-			$(".ext-link-3").addClass("ext-icon-4");
 		} else if (randBgFive == "green") {
 			$(".text-five").addClass("text-green");
-			$(".ext-link-3").addClass("ext-icon-2");
 		} else if (randBgFive == "red") {
 			$(".text-five").addClass("text-red");
-			$(".ext-link-3").addClass("ext-icon-4");
 		} else if (randBgFive == "teal") {
 			$(".text-five").addClass("text-teal");
-			$(".ext-link-3").addClass("ext-icon-5");
 		} else {
 			console.log("Error with BG Five");
 		}
@@ -217,6 +219,28 @@ function shuffleColours() {
 		}
 	}
 
+	// Chrome, Firefox, View > and Play > pick a colour away from their
+	// neighbouring project titles instead of mirroring one of them directly.
+	function subLinkColours() {
+		// Chrome & Firefox sit under TRR, between Julie's Demiplane (above) and Go Get It (below)
+		let trrNeighbours = [randBgOne, randBgThree, randBgFour, randBgTwo];
+		let chromeColour = pickColourAwayFrom(trrNeighbours);
+		$(".ext-link-1").addClass(extIconClass(chromeColour));
+		let firefoxColour = pickColourAwayFrom(trrNeighbours.concat([chromeColour]));
+		$(".ext-link-2").addClass(extIconClass(firefoxColour));
+
+		// View > sits under Julie's Demiplane (its own two shadow colours), with TRR below,
+		// and also dodges both Chrome and Firefox since all three sit near the top of the list.
+		// This pins View > to whatever colour is left over (currently Go Get It's), since
+		// Chrome + Firefox + View's own neighbours already use up 5 of the 6 colours.
+		let viewColour = pickColourAwayFrom([randBgThree, randBgFour, randBgOne, chromeColour, firefoxColour]);
+		$(".ext-link-3").addClass(extIconClass(viewColour));
+
+		// Play > sits under Bob's Burgers, between Blackbolt Comics (above) and Local Directory (below)
+		let playColour = pickColourAwayFrom([randBgThree, randBgFour, randBgFive]);
+		$(".ext-link-4").addClass(extIconClass(playColour));
+	}
+
 	function colourGenerator(){
 		colourOne();
 		colourTwo();
@@ -224,6 +248,7 @@ function shuffleColours() {
 		colourFour();
 		colourFive();
 		colourSix();
+		subLinkColours();
 	}
 	colourGenerator();
 }
@@ -232,12 +257,12 @@ function reshuffleColours() {
 	$(".text-five").removeClass("text-cyan text-yel text-lilac text-green text-red text-teal");
 	$(".text-one").removeClass("text-cyan text-yel text-lilac text-green text-red text-teal");
 	$(".nav-icon-3").removeClass("icon icon-2 icon-3 icon-4 icon-5 icon-6");
-	$(".ext-link-1").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4 ext-icon-5");
+	$(".ext-link-1").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4 ext-icon-5 ext-icon-6");
 	// Remove underline color classes from special title
 	$(".trr-title-special").removeClass("trr-underline-cyan trr-underline-yellow trr-underline-lilac trr-underline-green trr-underline-red trr-underline-teal");
 	$(".text-two").removeClass("text-cyan");
 	$(".nav-icon-2").removeClass("icon");
-	$(".ext-link-2").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4 ext-icon-5");
+	$(".ext-link-2").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4 ext-icon-5 ext-icon-6");
 	$(".text-two").removeClass("text-yel");
 	$(".nav-icon-2").removeClass("icon-3");
 	$(".text-two").removeClass("text-lilac");
@@ -270,6 +295,7 @@ function reshuffleColours() {
 	$(".text-four").removeClass("text-teal");
 	$(".text-six").removeClass("text-cyan text-yel text-lilac text-green text-red text-teal");
 	$(".email").removeClass("icon icon-2 icon-3 icon-4 icon-5 icon-6");
-	$(".ext-link-3").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4 ext-icon-5");
+	$(".ext-link-3").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4 ext-icon-5 ext-icon-6");
+	$(".ext-link-4").removeClass("ext-icon ext-icon-2 ext-icon-3 ext-icon-4 ext-icon-5 ext-icon-6");
 	shuffleColours();
 };
