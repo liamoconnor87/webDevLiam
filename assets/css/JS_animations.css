@@ -25,9 +25,13 @@
 }
 
 .bg-green{
-	background-color: rgb(0, 255, 148);
+	background-color: rgb(255, 153, 0);
 }
 
 .bg-lilac{
 	background-color: rgb(212, 0, 255);
+}
+
+.bg-teal{
+	background-color: rgb(0, 255, 148);
 }

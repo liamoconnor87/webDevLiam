@@ -56,9 +56,15 @@ a{
 .logo {
   font-size: 4rem;
   font-weight: 400;
+  line-height: 0.68;
+  letter-spacing: -0.02em;
   margin-bottom: 0;
-  padding-bottom: 0.1rem;
-  border-bottom: 3px solid rgb(212, 0, 255);
+  padding-bottom: 0.15rem;
+  border-bottom: 4.5px solid transparent;
+}
+
+.logo:hover {
+  border-bottom-color: rgb(212, 0, 255);
 }
 
 .name-title {
@@ -87,7 +93,6 @@ a{
 }
 
 .email a:hover {
-  color: rgb(255, 37, 54);
   text-decoration: underline;
 }
 
@@ -103,37 +108,54 @@ a{
   transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-/* Icon color classes for shuffle */
-.icon a {
-  color: #fff !important;
-}
-
-.icon a:hover {
+/* Email: colour always shown */
+.email.icon a {
   color: rgb(0, 255, 255) !important;
 }
 
-.icon-2 a {
-  color: #fff !important;
+.email.icon-2 a {
+  color: rgb(255, 153, 0) !important;
 }
 
-.icon-2 a:hover {
-  color: rgb(0, 255, 148) !important;
-}
-
-.icon-3 a {
-  color: #fff !important;
-}
-
-.icon-3 a:hover {
+.email.icon-3 a {
   color: rgb(255, 237, 96) !important;
 }
 
-.icon-4 a {
-  color: #fff !important;
+.email.icon-4 a {
+  color: rgb(212, 0, 255) !important;
 }
 
-.icon-4 a:hover {
+.email.icon-5 a {
+  color: rgb(0, 255, 148) !important;
+}
+
+.email.icon-6 a {
+  color: rgb(255, 37, 54) !important;
+}
+
+/* LinkedIn (nav-icon-1) and GitHub (nav-icon-2): colour shown on hover */
+.social-icons .icon a:hover {
+  color: rgb(0, 255, 255) !important;
+}
+
+.social-icons .icon-2 a:hover {
+  color: rgb(255, 153, 0) !important;
+}
+
+.social-icons .icon-3 a:hover {
+  color: rgb(255, 237, 96) !important;
+}
+
+.social-icons .icon-4 a:hover {
   color: rgb(212, 0, 255) !important;
+}
+
+.social-icons .icon-5 a:hover {
+  color: rgb(0, 255, 148) !important;
+}
+
+.social-icons .icon-6 a:hover {
+  color: rgb(255, 37, 54) !important;
 }
 
 .shuffle-icon {
@@ -161,11 +183,19 @@ a{
 }
 
 .shuffle-icon .nav-icon-3.icon-2 a:hover {
-  color: rgb(0, 255, 148) !important;
+  color: rgb(255, 153, 0) !important;
 }
 
 .shuffle-icon .nav-icon-3.icon-3 a:hover {
   color: rgb(255, 237, 96) !important;
+}
+
+.shuffle-icon .nav-icon-3.icon-5 a:hover {
+  color: rgb(0, 255, 148) !important;
+}
+
+.shuffle-icon .nav-icon-3.icon-6 a:hover {
+  color: rgb(255, 37, 54) !important;
 }
 
 .right-side {
@@ -196,7 +226,7 @@ a{
 }
 
 .list-heading {
-  color: #fff;
+  color: #ccc;
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -271,7 +301,7 @@ a{
 }
 
 .ext-link.ext-icon-2:hover {
-  color: rgb(0, 255, 148) !important;
+  color: rgb(255, 153, 0) !important;
 }
 
 .ext-link.ext-icon-3 {
@@ -288,6 +318,14 @@ a{
 
 .ext-link.ext-icon-4:hover {
   color: rgb(212, 0, 255) !important;
+}
+
+.ext-link.ext-icon-5 {
+  color: #999 !important;
+}
+
+.ext-link.ext-icon-5:hover {
+  color: rgb(0, 255, 148) !important;
 }
 
 /* TEXT COLOR CLASSES */
@@ -308,12 +346,17 @@ a{
 
 .text-green,
 .text-green a {
-  color: rgb(0, 255, 148);
+  color: rgb(255, 153, 0);
 }
 
 .text-lilac,
 .text-lilac a {
   color: rgb(212, 0, 255);
+}
+
+.text-teal,
+.text-teal a {
+  color: rgb(0, 255, 148);
 }
 
 .welcome{

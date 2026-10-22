@@ -13,7 +13,7 @@
 }
 
 .julies-demiplane-title-outline-word {
-  text-shadow: 5px 2px 0 var(--outline-shadow-colour, rgb(0, 204, 118));
+  text-shadow: 5px 2px 0 var(--outline-shadow-colour, rgb(204, 122, 0));
 }
 
 .julies-demiplane-title-asterisk-word {
@@ -30,12 +30,16 @@
   --outline-shadow-colour: rgb(204, 30, 43);
 }
 
+.outline-shadow-teal {
+  --outline-shadow-colour: rgb(0, 204, 118);
+}
+
 .outline-shadow-yellow {
   --outline-shadow-colour: rgb(204, 190, 77);
 }
 
 .outline-shadow-green {
-  --outline-shadow-colour: rgb(0, 204, 118);
+  --outline-shadow-colour: rgb(204, 122, 0);
 }
 
 .outline-shadow-lilac {
