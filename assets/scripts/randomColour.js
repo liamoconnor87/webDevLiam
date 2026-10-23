@@ -9,6 +9,19 @@ function outlineShadowClass(colourName) {
 	return "";
 }
 
+// Same RGB values as the .trr-underline-* classes in trr.css - drives the
+// switch's colours via --trr-line-colour, same practice as the extension
+function trrLineColourRgb(colourName) {
+	if (colourName == "cyan") return "0, 255, 255";
+	if (colourName == "lilac") return "240, 109, 255";
+	if (colourName == "yellow") return "255, 237, 96";
+	if (colourName == "green") return "255, 153, 0";
+	if (colourName == "red") return "255, 37, 54";
+	if (colourName == "teal") return "0, 255, 148";
+	console.log("Error with trr line colour");
+	return "240, 109, 255";
+}
+
 function extIconClass(colourName) {
 	if (colourName == "cyan") return "ext-icon";
 	if (colourName == "yellow") return "ext-icon-3";
@@ -72,6 +85,7 @@ function shuffleColours() {
 		// Remove previous underline color classes from special title
 		var $specialTitle = $(".trr-title-special");
 		$specialTitle.removeClass("trr-underline-cyan trr-underline-yellow trr-underline-lilac trr-underline-green trr-underline-red trr-underline-teal");
+		document.documentElement.style.setProperty('--trr-line-colour', 'rgb(' + trrLineColourRgb(randBgOne) + ')');
 		if (randBgOne == "cyan") {
 			$(".text-one").addClass("text-cyan");
 			$(".nav-icon-3").addClass("icon-4");

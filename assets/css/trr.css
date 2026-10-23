@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../fonts/OpenDyslexic-Regular.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  font-weight: bold;
+  src: url("../fonts/OpenDyslexic-Bold.otf") format('opentype');
+}
+
 /* THE READING RULER SWITCH */
 .trr-title-row {
   display: flex;
@@ -68,7 +79,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(60, 26, 64);
+  /* Darkened the same way the extension derives its track colour from the line colour */
+  background-color: color-mix(in srgb, var(--trr-line-colour, rgb(240, 109, 255)) 35%, black);
   transition: .2s;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
 }
@@ -86,7 +98,7 @@
 }
 
 input:checked + .trr-slider {
-  background-color: rgb(240, 109, 255);
+  background-color: var(--trr-line-colour, rgb(240, 109, 255));
 }
 
 input:checked + .trr-slider:before {
@@ -105,7 +117,7 @@ input:checked + .trr-slider:before {
   opacity: 0;
   transition: opacity 0.3s ease;
   background-color: rgba(0, 11, 26, 0.7);
-  border-top: 2px solid rgb(240, 109, 255);
+  border-top: 2px solid var(--trr-line-colour, rgb(240, 109, 255));
 }
 
 /* Hide switch on touch devices (tablets, phones) */
@@ -124,24 +136,21 @@ input:checked + .trr-slider:before {
 
 /* SPECIAL TITLE STYLING */
 .trr-title-special {
-  font-family: "Sixtyfour", sans-serif !important;
-  color: rgb(23, 232, 138) !important;
+  font-family: "OpenDyslexic", sans-serif !important;
+  color: rgb(240, 238, 235) !important;
   text-shadow: 5px 5px 0 rgb(8, 14, 24) !important;
-  font-size: 1.1rem !important;
+  font-size: 1.4rem !important;
   font-weight: 300 !important;
   width: auto !important;
   height: auto !important;
   line-height: 1.8rem !important;
-  letter-spacing: -0.05em !important;
-  word-spacing: -0.6em !important;
   text-decoration: underline !important;
 }
 
 @media (max-width: 600px) {
   .trr-title-special {
-    font-size: 1rem !important;
-    line-height: 1.3rem !important;
-    word-spacing: -0.2em !important;
+    font-size: 1.2rem !important;
+    line-height: 1.5rem !important;
   }
 }
 
